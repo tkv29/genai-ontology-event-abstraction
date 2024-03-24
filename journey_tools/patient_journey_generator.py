@@ -6,7 +6,7 @@ import utils as u
 from . import prompts as p
 from pathlib import Path
 
-outputh_path = Path("results/patient_journeys/generated_patient_journeys/")
+results_path = Path("results/patient_journeys/generated_patient_journeys/")
 
 def generate_patient_journey():
     """Creates a new patient journey with the help of the GPT engine."""
@@ -20,7 +20,7 @@ def generate_patient_journey():
     patient_journey = u.query_gpt(messages=messages, temperature=1)
     i = 0
     proposed_filename = "journey_synth_covid_" + str(i) + ".txt"
-    output_path = output_path / proposed_filename
+    output_path = results_path / proposed_filename
     while os.path.isfile(output_path):
         i += 1
         proposed_filename = "journey_synth_covid_" + str(i) + ".txt"

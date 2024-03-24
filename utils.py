@@ -33,8 +33,8 @@ def query_gpt(
             messages=messages,
             max_tokens=max_tokens,
             temperature=temperature,
-            tools=tools,
-            tool_choice=tool_choice,
+            # tools=tools,
+            # tool_choice=tool_choice,
             logprobs=logprobs,
             top_logprobs=top_logprobs,
         )
