@@ -6,7 +6,7 @@ import utils as u
 from . import prompts as p
 from pathlib import Path
 
-results_path = Path("results/patient_journeys/generated_patient_journeys/")
+results_path = Path("results/patient_journeys/")
 
 def generate_patient_journey():
     """Creates a new patient journey with the help of the GPT engine."""
@@ -24,7 +24,7 @@ def generate_patient_journey():
     while os.path.isfile(output_path):
         i += 1
         proposed_filename = "journey_synth_covid_" + str(i) + ".txt"
-        output_path = output_path / proposed_filename
+        output_path = results_path / proposed_filename
     with open(output_path, "w") as f:
         f.write(patient_journey)
     print(
@@ -36,7 +36,6 @@ def generate_patient_journey():
 
 def create_patient_journey_context():
     """Creation of a patient journey."""
-    #TODO ADD BETTER PROGRESS BAR
     print("Generation in progress: [----------] 0%", end="\r")
     sex = "male" if random.randrange(2) == 0 else "female"
     print("Generation in progress: [▬---------] 10%", end="\r")
@@ -47,7 +46,7 @@ def create_patient_journey_context():
     life_circumstances = get_life_circumstances(sex)
     print("Generation in progress: [▬▬▬▬▬-----] 50%", end="\r")
     patient_journey_context = (
-        f"Imagine being a {sex} person from {country}, that was infected with Covid19."
+        f"Imagine being a {sex} person from {country}, that was infected with Rheumatoid Arthritis."
         f" You had first symptoms on {date}. {life_circumstances}"
     )
     return patient_journey_context
