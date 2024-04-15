@@ -1,7 +1,7 @@
 import os
 import json
 from openai import OpenAI
-import event_abstractor_tools.function_calls as function_calls
+import function_calls as function_calls
 
 
 oaik = os.environ.get(
@@ -45,7 +45,7 @@ def query_gpt(
     response = make_api_call()
     if tool_choice != "none":
         api_response = response.choices[0].message.tool_calls[0].function.arguments
-        output = json.loads(api_response)["output"][0]
+        output = json.loads(api_response)["output"]
 
     elif logprobs:
         top_logprobs = response.choices[0].logprobs.content[0].top_logprobs

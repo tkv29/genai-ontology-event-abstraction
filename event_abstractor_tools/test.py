@@ -1,7 +1,8 @@
-from rdflib import Graph, Namespace, RDF, RDFS, OWL
+from rdflib import Graph, RDFS, OWL
 import utils as u
 import prompts as p
 import pm4py
+import function_calls as fc
 
 def read_owl_file(file_path):
     g = Graph()
@@ -61,7 +62,8 @@ print("Ontology string representation:")
 print(ontology_string)
 
 
-def abstract(xes, owl_file):
+
+def abstract():
     # Read the OWL file
     owl_file = "/home/tkv29/genai-ontology-event-abstraction/content/test.owl"
     g = read_owl_file(owl_file)
@@ -84,8 +86,26 @@ def abstract(xes, owl_file):
     print("Ontology string representation:")
     print(ontology_string)
 
-    dataframe = pm4py.read_xes(xes)
-    activities = dataframe["activities"]
-    
+    xes = "/home/tkv29/genai-ontology-event-abstraction/content/test.xes"
 
+    dataframe = pm4py.read_xes(xes)
+    activities = dataframe["activity"]
+    print(activities)
+
+    messages = [
+        {"role": "system", "content": p.IDENTIFY_CONTEXT},
+        {"role": "user", "content": p.IDENTIFY_PROMPT + "\n" + "\n".join(activities)},
+    ]
+
+    relevant_activities = u.query_gpt(messages=messages, tools=fc.TOOLS ,tool_choice={"type": "function", "function": {"name": "extract_medication_rows"}})
+    print(relevant_activities)
+    for activity in relevant_activities:
+        messages = [
+        {"role": "system", "content": p.ABSTRACTION_CONTEXT},
+        {"role": "user", "content": p.ABSTRACTION_PROMPT_1 + ontology_string + p.ABSTRACTION_PROMPT_2 + activity},
+    ]
+        answer=u.query_gpt(messages=messages)
+        print(answer)
+
+abstract()
 
