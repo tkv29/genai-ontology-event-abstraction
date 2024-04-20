@@ -1,0 +1,326 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://example.com/ontology#"
+    xml:base="http://example.com/ontology"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+  <owl:Ontology rdf:about="http://example.com/ontology"/>
+
+  <owl:Class rdf:about="Drug_or_medicament">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Non-steroidal_anti-inflammatory_agent">
+    <rdfs:subClassOf rdf:resource="Drug_or_medicament"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Ketorolac_trometamol">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Diclofenac_potassium">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Oxaprozin">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Bromfenac">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Bromfenac_sodium">
+    <rdfs:subClassOf rdf:resource="Bromfenac"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Suprofen">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Mefenamate">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Meclofenamate">
+    <rdfs:subClassOf rdf:resource="Mefenamate"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Meclofenamate_sodium">
+    <rdfs:subClassOf rdf:resource="Meclofenamate"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Meclofenamic_acid">
+    <rdfs:subClassOf rdf:resource="Meclofenamate"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Carprofen">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Indometacin_sodium_anhydrous">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Polmacoxib">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Piketoprofen">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Loxoprofen">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Salicylamide">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Phenylbutazone">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Bufexamac">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Nefopam_hydrochloride">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Benzydamine_hydrochloride">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Ketorolac">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Naproxen">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Tolmetin">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Flurbiprofen">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Indometacin">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Fenoprofen">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Ketoprofen">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Nabumetone">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Etodolac">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Meloxicam">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Piroxicam">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Ibuprofen">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Sulindac">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Aceclofenac">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Acemetacin">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Azapropazone">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Tenoxicam">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Tiaprofenic_acid">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Tolfenamic_acid">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Dexketoprofen">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Felbinac">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Fenbufen">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Benoxaprofen">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Lornoxicam">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Dexibuprofen">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Nepafenac">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Benzydamine">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Firocoxib">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Deracoxib">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Lumiracoxib">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Diclofenac_sodium">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Diclofenac">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Nimesulide">
+    <rdfs:subClassOf rdf:resource="Non-steroidal_anti-inflammatory_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Antineoplastic_agent">
+    <rdfs:subClassOf rdf:resource="Drug_or_medicament"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Methotrexate">
+    <rdfs:subClassOf rdf:resource="Antineoplastic_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Immunosuppressant">
+    <rdfs:subClassOf rdf:resource="Drug_or_medicament"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Azathioprine">
+    <rdfs:subClassOf rdf:resource="Immunosuppressant"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Ciclosporin">
+    <rdfs:subClassOf rdf:resource="Immunosuppressant"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Leflunomide">
+    <rdfs:subClassOf rdf:resource="Immunosuppressant"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Mycophenolate_mofetil">
+    <rdfs:subClassOf rdf:resource="Immunosuppressant"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Mycophenolic_acid">
+    <rdfs:subClassOf rdf:resource="Immunosuppressant"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Tacrolimus">
+    <rdfs:subClassOf rdf:resource="Immunosuppressant"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Tofacitinib">
+    <rdfs:subClassOf rdf:resource="Immunosuppressant"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Tofacitinib_citrate">
+    <rdfs:subClassOf rdf:resource="Tofacitinib"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Baricitinib">
+    <rdfs:subClassOf rdf:resource="Immunosuppressant"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Antirheumatic_agent">
+    <rdfs:subClassOf rdf:resource="Drug_or_medicament"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Hydroxychloroquine">
+    <rdfs:subClassOf rdf:resource="Antirheumatic_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Hydroxychloroquine_sulfate">
+    <rdfs:subClassOf rdf:resource="Hydroxychloroquine"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Penicillamine">
+    <rdfs:subClassOf rdf:resource="Antirheumatic_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Sulfasalazine">
+    <rdfs:subClassOf rdf:resource="Antirheumatic_agent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Adrenal_cortex_hormone">
+    <rdfs:subClassOf rdf:resource="Drug_or_medicament"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Prednisone">
+    <rdfs:subClassOf rdf:resource="Adrenal_cortex_hormone"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Methylprednisolone">
+    <rdfs:subClassOf rdf:resource="Adrenal_cortex_hormone"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Triamcinolone">
+    <rdfs:subClassOf rdf:resource="Adrenal_cortex_hormone"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Paramethasone">
+    <rdfs:subClassOf rdf:resource="Adrenal_cortex_hormone"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Paramethasone_acetate">
+    <rdfs:subClassOf rdf:resource="Paramethasone"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Prednisolone">
+    <rdfs:subClassOf rdf:resource="Adrenal_cortex_hormone"/>
+  </owl:Class>
+
+</rdf:RDF>

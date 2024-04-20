@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<log xes.version="1849-2016" xes.features="nested-attributes" xmlns="http://www.xes-standard.org/">
+  <extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext" />
+  <extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext" />
+  <string key="origin" value="csv" />
+  <trace>
+    <string key="concept:name" value="9" />
+    <event>
+      <string key="activity" value="starting to experience symptoms" />
+      <date key="start_timestamp" value="2021-11-01T00:00:00" />
+    </event>
+    <event>
+      <string key="activity" value="visiting doctor's" />
+      <date key="start_timestamp" value="2021-12-01T00:00:00" />
+    </event>
+    <event>
+      <string key="activity" value="getting diagnosed with Rheumatoid Arthritis" />
+      <date key="start_timestamp" value="2022-01-01T00:00:00" />
+    </event>
+    <event>
+      <string key="activity" value="struggling to find effective medication" />
+      <date key="start_timestamp" value="2022-02-01T00:00:00" />
+    </event>
+    <event>
+      <string key="activity" value="initially using Ibuprofen for pain relief" />
+      <date key="start_timestamp" value="2022-01-01T00:00:00" />
+    </event>
+    <event>
+      <string key="activity" value="introducing DMARDs like methotrexate" />
+      <date key="start_timestamp" value="2022-02-01T00:00:00" />
+    </event>
+    <event>
+      <string key="activity" value="noticing improvements in joint pain" />
+      <date key="start_timestamp" value="2022-02-01T00:00:00" />
+    </event>
+    <event>
+      <string key="activity" value="adding biologic DMARDs like adalimumab" />
+      <date key="start_timestamp" value="2022-04-01T00:00:00" />
+    </event>
+    <event>
+      <string key="activity" value="combining medications for improved quality of life" />
+      <date key="start_timestamp" value="2022-04-01T00:00:00" />
+    </event>
+    <event>
+      <string key="activity" value="consulting with healthcare professionals for treatment" />
+      <date key="start_timestamp" value="2022-04-01T00:00:00" />
+    </event>
+    <event>
+      <string key="activity" value="regaining control over Rheumatoid Arthritis" />
+      <date key="start_timestamp" value="2022-04-01T00:00:00" />
+    </event>
+  </trace>
+</log>

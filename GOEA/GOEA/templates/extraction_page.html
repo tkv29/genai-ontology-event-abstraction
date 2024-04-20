@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
+</head>
+<body>
+    <img src="path/to/your/sample-picture.jpg" alt="Sample Picture">
+    <div> {{ xes_html|safe }}</div>
+    <div> {{ ontology_graph|safe }}</div>
+    <div>
+        <label for="depth-slider">Select Depth Level:</label>
+        <input type="range" id="depth-slider" name="depth" min="1" max="{{ max_depth }}" value="1" step="1">
+        <span id="depth-value"></span>
+    </div>
+    <a href="#" class="button">Click Me</a>
+</body>
+</html>
