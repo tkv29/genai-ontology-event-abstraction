@@ -20,9 +20,8 @@
           </form>
           <div id="slider-value-display">Current Depth Level: <span id="slider-value">{{ selected_depth }}</span></div>
           <div id="textbox-container">
-            <!-- Add your textbox content here -->
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a bibendum bibendum, augue magna tincidunt enim, eget ultricies magna augue eget est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam erat volutpat. Sed sed nisi malesuada, posuere magna id, tincidunt odio.
-          </div>
+            <textarea rows="30" cols="50" readonly>{{ ontology_string }}</textarea>
+        </div>
         </div>
         <div id="graph-container">
           <div id="ontology-graph-container">{{ ontology_graph|safe }}</div>

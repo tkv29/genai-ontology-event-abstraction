@@ -67,6 +67,15 @@ hr.rounded {
     width: 100%;
 }
 
+#textbox-container textarea {
+    margin-top: 28px;
+    width: 100%;
+    height: 100%;
+    resize: none; 
+    border:1px solid #bbb;
+    box-sizing: border-box; 
+  }
+
 /* Style for tables */
 
 .dataframe { width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; }

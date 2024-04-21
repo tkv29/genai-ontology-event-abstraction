@@ -38,6 +38,7 @@ class ExtractionView(TemplateView):
             selected_depth = event_abstractor.get_max_depth()
         
         context["selected_depth"] = selected_depth
+        context["ontology_string"] = event_abstractor.create_ontology_representation()
         context["ontology_graph"] = event_abstractor.visualize_graph(selected_depth)
         context["max_depth"] = event_abstractor.get_max_depth()
         

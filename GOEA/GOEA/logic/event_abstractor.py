@@ -51,15 +51,15 @@ class EventAbstractor:
         root_class = OWL.Thing
         return self.__get_class_depth(root_class)
 
-    def create_level_dictionary(self, class_uri, level_dict, depth=0):
+    def __create_level_dictionary(self, class_uri, level_dict, depth=0):
         if depth not in level_dict:
             level_dict[depth] = []
         level_dict[depth].append(class_uri)
         subclasses = self.__get_subclasses(class_uri)
         for subclass in subclasses:
-            self.create_level_dictionary(subclass, level_dict, depth + 1)
+            self.__create_level_dictionary(subclass, level_dict, depth + 1)
 
-    def create_ontology_string(self, level_dict, processed_classes, indent=0):
+    def __create_ontology_string(self, level_dict, processed_classes, indent=0):
         ontology_string = ""
         for level in sorted(level_dict.keys()):
             for class_uri in level_dict[level]:
@@ -69,7 +69,7 @@ class EventAbstractor:
                     ontology_string += " " * indent + "-" * bool(indent) + class_label + "\n"
                     subclasses = self.__get_subclasses(class_uri)
                     if subclasses:
-                        ontology_string += self.create_ontology_string({level + 1: subclasses}, processed_classes, indent + 1)
+                        ontology_string += self.__create_ontology_string({level + 1: subclasses}, processed_classes, indent + 1)
         return ontology_string
 
     def create_ontology_representation(self):
@@ -78,11 +78,11 @@ class EventAbstractor:
         print("Ontology depth:", max_depth)
 
         level_dict = {}
-        self.create_level_dictionary(root_class, level_dict)
+        self.__create_level_dictionary(root_class, level_dict)
         print("Level dictionary:", level_dict)
 
         processed_classes = set()
-        ontology_string = self.create_ontology_string(level_dict, processed_classes)
+        ontology_string = self.__create_ontology_string(level_dict, processed_classes)
         print("Ontology string representation:")
         print(ontology_string)
 
