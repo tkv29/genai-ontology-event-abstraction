@@ -21,5 +21,6 @@ from . import views
 urlpatterns = [
     path("", views.UploadPageView.as_view(), name="upload_page"),
     path("extraction/", views.ExtractionView.as_view(), name="extraction_page"),
+    path("result/", views.ResultPageView.as_view(), name="result_page"),
     path('admin/', admin.site.urls),
 ]

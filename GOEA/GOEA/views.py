@@ -1,3 +1,4 @@
+from django.http import JsonResponse
 from django.views.generic import TemplateView
 from django.shortcuts import render, redirect
 from .forms import UploadFilesForm
@@ -43,6 +44,28 @@ class ExtractionView(TemplateView):
         context["max_depth"] = event_abstractor.get_max_depth()
         
         return context
+    
+    def get(self, request, *args, **kwargs):
+        """Return a JSON response with the current progress of the pipeline."""
+        is_ajax = request.headers.get("X-Requested-With") == "XMLHttpRequest"
+        if is_ajax:
+            progress_information = {
+                "progress": self.request.session.get("progress"),
+                "status": self.request.session.get("status"),
+            }
+            return JsonResponse(progress_information)
+
+        self.request.session["progress"] = 0
+        self.request.session["status"] = None
+        self.request.session.save()
+
+        return super().get(request, *args, **kwargs)
+    
+    def post(self, request):
+        # event_abstractor = EventAbstractor.get_instance()
+        # selected_depth = int(request.POST.get("slider_value"))
+        # event_abstractor.visualize_graph(selected_depth)
+        return redirect('result_page')
 
 class ResultPageView(TemplateView):
-    template_name = 'index.html'
+    template_name = 'result_page.html'

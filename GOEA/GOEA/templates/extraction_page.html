@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="{% static '/js/slider.js' %}" defer></script>
+    <script src="{% static '/js/progress-bar.js' %}" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body class="main_body">
     <h1> Uploaded Ontology</h1>
@@ -29,7 +31,21 @@
       </div>
       <hr class="rounded">
     <h1> Uploaded XES Event Log</h1>
-      <div id="xes-container">{{ xes_html|safe }}</div>
+      <div class="table-container" id="xes-container">{{ xes_html|safe }}</div>
+
+    <div class="spinner-container" id="loading-container">
+      <span id="loading-spinner" class="loader not_visible"></span>
+    </div>
+    <div id="progress_box" class="not_visible">
+      <div class="progress-container">
+        <!-- Progress bar and message will be added here -->
+      </div>
+    </div>
+    
+    <form method="post" >
+      {% csrf_token %}
+      <button type="submit" class="btn btn-outline-primary btn-lg mt-4 btn-block" id="progress_button">GO - Event Abstraction</button>
+    </form>
 
     <a href="{% url 'upload_page' %}">
         <button class="btn btn-outline-secondary btn-lg mt-4 btn-block">Return To Upload Page</button>

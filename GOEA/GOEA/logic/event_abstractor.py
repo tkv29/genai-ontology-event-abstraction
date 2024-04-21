@@ -83,8 +83,6 @@ class EventAbstractor:
 
         processed_classes = set()
         ontology_string = self.__create_ontology_string(level_dict, processed_classes)
-        print("Ontology string representation:")
-        print(ontology_string)
 
         return ontology_string
     
@@ -131,3 +129,13 @@ class EventAbstractor:
             ]
             answer = u.query_gpt(messages=messages)
             print(answer)
+
+    def update_progress(self, view, current_step, module_name):
+        """Update the progress of the extraction."""
+        if view is not None:
+            percentage = round(
+                (current_step / len(self.get_configuration().modules)) * 100
+            )
+            view.request.session["progress"] = percentage
+            view.request.session["status"] = module_name
+            view.request.session.save()
