@@ -19,8 +19,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    #path("", views.LandingPageView.as_view(), name="landing_page"),
-    path("", views.UploadPageView.as_view(), name="landing_page"),
+    path("", views.UploadPageView.as_view(), name="upload_page"),
     path("extraction/", views.ExtractionView.as_view(), name="extraction_page"),
     path('admin/', admin.site.urls),
 ]

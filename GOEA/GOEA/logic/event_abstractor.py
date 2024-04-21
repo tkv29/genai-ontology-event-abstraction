@@ -103,7 +103,7 @@ class EventAbstractor:
         filtered_edges = [(u, v) for u, v, d in visualization_graph.edges(data=True) if d['depth'] <= depth]
         filtered_graph = nx.DiGraph(filtered_edges)
 
-        net = Network(height='800px', width='100%', bgcolor='#222222', font_color='white')
+        net = Network(height='800px', width='100%', bgcolor='#ffffff', font_color='black')
         net.from_nx(filtered_graph)
         net.repulsion(node_distance=420, central_gravity=0.33, spring_length=110, spring_strength=0.10, damping=0.95)
         html_file = net.generate_html()
