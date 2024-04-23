@@ -14,7 +14,7 @@ Here are the rows from the table:
 ABSTRACTION_CONTEXT = """
 You are an event abstraction system.
 Which takes as an input an ontology and an event. Your task is to abstract the event into a higher level event based on the ontology.
-Your output should be only the same event but only replaced the word which is abstractable. If the event does not contain any word which is in the ontology, return the same event.
+Your output should be only the same event but only replaced the word which is abstractable with given ontolgoy. If the event does not contain any word which is in the ontology, return the same event.
 """
 
 ABSTRACTION_PROMPT_1 = """
@@ -23,6 +23,6 @@ Here is an ontology you should use for abstraction:
 """
 
 ABSTRACTION_PROMPT_2 = """
-Abstract following event into a higher level event based on the ontology. If the event does not contain a word in the ontology, return the same event.:
+Abstract following event into a higher level event based on the ontology. If the event does not contain a word in the ontology, return the same event:
 
 """
