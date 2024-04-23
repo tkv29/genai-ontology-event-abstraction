@@ -15,6 +15,10 @@
     <h1> Uploaded Ontology</h1>
     <div class="row-container">
         <div id="slider-container">
+          <div class="heading-container">
+            <h2>Choose Abstraction Level</h2>
+            <div class="info-button" title="The leaf nodes, represented by the red vertices, denote the target abstraction level. In other words, these nodes signify where events will be abstracted." aria-label="">i</div>
+          </div>
           <form id="slider-form" method="get" action=".">
             {% csrf_token %}
             <input type="range" id="slider" name="slider_value" min="1" max="{{ max_depth }}" value="{{ selected_depth }}">

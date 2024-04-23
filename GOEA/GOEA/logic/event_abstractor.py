@@ -107,18 +107,11 @@ class EventAbstractor:
         net = Network(height='800px', width='100%', bgcolor='#ffffff', font_color='black')
         net.from_nx(filtered_graph)
 
-        # Generate unique random colors for each depth level
-        depth_colors = {}
         for node in filtered_graph.nodes():
             depth_level = filtered_graph.nodes[node]['depth']
-            if depth_level not in depth_colors:
-                while True:
-                    color = '#{:06x}'.format(random.randint(0, 0xFFFFFF))
-                    if color not in depth_colors.values():
-                        depth_colors[depth_level] = color
-                        break
             net_node = net.get_node(node)
-            net_node['color'] = depth_colors[depth_level]
+            if depth_level == depth:
+                net_node['color'] = '#FAA0A0'
 
         net.repulsion(node_distance=420, central_gravity=0.33, spring_length=110, spring_strength=0.10, damping=0.95)
         html_file = net.generate_html()
