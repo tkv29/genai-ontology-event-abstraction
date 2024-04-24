@@ -1,7 +1,7 @@
 import os
 import json
 from openai import OpenAI
-import function_calls as function_calls
+from . import function_calls as function_calls
 
 
 oaik = os.environ.get(
