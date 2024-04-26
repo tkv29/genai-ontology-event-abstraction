@@ -83,7 +83,7 @@ ABSTRACTION_MESSAGES =[
     },
     {
         "role": "user",
-        "content": "What is the uppermost class of Ibuprofen?"
+        "content": "What is the uppermost class of Ibuprofen which is on the level: 2?"
     },
     {
         "role": "assistant",
@@ -92,7 +92,7 @@ ABSTRACTION_MESSAGES =[
     },
     {
         "role": "user",
-        "content": "What is the uppermost class of Methotrexate?"
+        "content": "What is the uppermost class of Methotrexate which is on the level: 2?"
     },
     {
         "role": "assistant",
@@ -100,7 +100,7 @@ ABSTRACTION_MESSAGES =[
     },
     {
         "role": "user",
-        "content": "What is the uppermost class of Celecoxib?"
+        "content": "What is the uppermost class of Celecoxib which is on the level: 2?"
     },
     {
         "role": "assistant",
@@ -108,7 +108,7 @@ ABSTRACTION_MESSAGES =[
     },
     {
         "role": "user",
-        "content": "What is the uppermost class of Meclofenamic acid?"
+        "content": "What is the uppermost class of Meclofenamic acid which is on the level: 2?"
     },
     {
         "role": "assistant",
@@ -140,7 +140,7 @@ ABSTRACTION_MESSAGES =[
     },
     {
         "role": "user",
-        "content": "What is the uppermost class of Meclofenamic acid?"
+        "content": "What is the uppermost class of Meclofenamic acid which is on the level: 1?"
     },
     {
         "role": "assistant",
@@ -148,7 +148,7 @@ ABSTRACTION_MESSAGES =[
     },
     {
         "role": "user",
-        "content": "What is the uppermost class of Prednisone?"
+        "content": "What is the uppermost class of Prednisone which is on the level: 1?"
     },
     {
         "role": "assistant",
@@ -156,7 +156,7 @@ ABSTRACTION_MESSAGES =[
     },
     {
         "role": "user",
-        "content": "What is the uppermost class of Celecoxib?"
+        "content": "What is the uppermost class of Celecoxib which is on the level:1?"
     },
     {
         "role": "assistant",
@@ -164,7 +164,7 @@ ABSTRACTION_MESSAGES =[
     },
     {
         "role": "user",
-        "content": "What is the uppermost class of Non-steroidal anti-inflammatory agent?"
+        "content": "What is the uppermost class of Non-steroidal anti-inflammatory agent which is on the level: 1?"
     },
     {
         "role": "assistant",

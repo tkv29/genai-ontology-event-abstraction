@@ -107,25 +107,27 @@ class EventAbstractor:
         net = Network(height='800px', width='100%', bgcolor='#ffffff', font_color='black')
         net.from_nx(visualization_graph.subgraph(nodes_to_add))
         
-        marked_nodes = set(node for node, data in visualization_graph.nodes(data=True) if data['depth'] == abstraction_level)
-        descendants = set(descendant for node in marked_nodes for descendant in nx.descendants(visualization_graph, node))
+        marked_nodes = {node for node, data in visualization_graph.nodes(data=True) if data['depth'] == abstraction_level}
+        descendants = {descendant for node in marked_nodes for descendant in nx.descendants(visualization_graph, node)}
         
         for node in nodes_to_add:
             net_node = net.get_node(node)
             if node in marked_nodes:
-                net_node['color'] = '#8B0000'  # Red color for target abstraction level
+                net_node['color'] = '#FF6A00'  # Orange color for target abstraction level
+                net_node['size'] = 20
             elif node in descendants:
-                net_node['color'] = '#008000'  # Green for potential abstraction
+                net_node['color'] = '#0D6EFD'  # Blue for potential abstraction
+            else:
+                net_node['color'] = '#808080'  # Grey for not considered nodes
         
         for edge in net.edges:
             source, target = edge['from'], edge['to']
             if (source in marked_nodes and target in descendants) or (source in descendants and target in descendants):
-                edge['color'] = '#008000'  # Green for edges of potential abstraction
-                edge['width'] = 3  
-            else:
-                edge['width'] = 1  
+                edge['color'] = '#0D6EFD'  # Blue for edges of potential abstraction
+                edge['width'] = 2.5
         
         net.repulsion(node_distance=420, central_gravity=0.33, spring_length=110, spring_strength=0.10, damping=0.95)
+        
         html_file = net.generate_html()
         modified_html = html_file.replace('lib/bindings/utils.js', f'{settings.STATIC_URL}js/utils.js')
         
@@ -135,15 +137,15 @@ class EventAbstractor:
         event_log_df = self.xes_df
         activities = event_log_df["activity"]
 
-        self.update_progress(view, 0, "Identifying relevant activities related to medications")
+        self.update_progress(view, 0, "Identifying Relevant Activities Related to Medications")
 
         relevant_activities = self.__identify_relevant_activities(activities)
         relevant_activities_df = event_log_df[event_log_df["activity"].isin(relevant_activities)]
 
-        self.update_progress(view, 1, "Extracting Medication Names from Relevant Activities")
+        self.update_progress(view, 1, "Extracting Drug or Medicament of Activities")
         relevant_activities_df["medication"] = relevant_activities_df["activity"].apply(self.__extract_medication)
 
-        self.update_progress(view, 2, "Abstracting medication names")
+        self.update_progress(view, 2, "Abstracting Drug Medicament on Target Abstraction Level")
         ontology_string = self.create_ontology_representation(abstraction_level)
         relevant_activities_df["abstracted_medication"] = relevant_activities_df["medication"].apply(
             lambda medication: self.__abstract_medication(ontology_string, medication, abstraction_level)
@@ -191,7 +193,7 @@ class EventAbstractor:
             },
             {
                 "role": "user",
-                "content": "What is the uppermost class of " + medication + "?",
+                "content": "What is the uppermost class of " + medication + " which is on the level: " + str(abstraction_level) + "?",
             }
         ])
 
