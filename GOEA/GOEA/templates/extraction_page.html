@@ -17,7 +17,12 @@
         <div id="slider-container">
           <div class="heading-container">
             <h2>Choose Abstraction Level</h2>
-            <div class="info-button" title="The leaf nodes, represented by the red vertices, denote the target abstraction level. In other words, these nodes signify where events will be abstracted." aria-label="">i</div>
+            <div class="info-button" title=
+            "Use the slider to change the target abstraction level.
+Orange Nodes: These nodes represent the target abstraction levels.
+Blue Nodes: These nodes represent the drugs/medications being abstracted to the orange nodes.
+Grey Nodes: These nodes are not considered in the abstraction at the current target abstraction level.
+            " aria-label="">i</div>
           </div>
           <form id="slider-form" method="get" action=".">
             {% csrf_token %}

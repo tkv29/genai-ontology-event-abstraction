@@ -104,28 +104,9 @@ hr.rounded {
   font-weight: bold;
   cursor: pointer;
   margin-left: 10px;
-  position: relative; /* Added */
+  position: relative; 
 }
 
-.info-button:hover::before {
-  content: attr(title);
-  display: block; /* Changed */
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 4px;
-  font-size: 12px;
-  white-space: nowrap;
-  z-index: 1;
-}
-
-.info-button::before {
-  display: none;
-}
 
 /* Style for tables */
 .dataframe { width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; }
