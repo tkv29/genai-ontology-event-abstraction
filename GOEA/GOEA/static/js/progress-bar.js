@@ -9,12 +9,12 @@ function updateProgressBar() {
         success: function(data) {
             // Update the progress bar element with the received progress data
             const percentage = data.progress !== null ? data.progress + "%" : "0%";
-            const current_module = data.status;
+            const current_status = data.status;
             progress_box.innerHTML = `
             <div class="progress">
                 <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" style="width: ${percentage};" aria-valuenow="${percentage}" aria-valuemin="0" aria-valuemax="100">${percentage}</div>
             </div>
-            ${current_module ? `<div class="progress-container"><p>${current_module} is currently running</p></div>` : '<div class="progress-container"></div>'}
+            ${current_status ? `<div class="progress-container"><p>${current_status}</p></div>` : '<div class="progress-container"></div>'}
         `;
 
             // If the task is not complete, continue checking for progress // hier muss data.progress rein

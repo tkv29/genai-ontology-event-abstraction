@@ -67,12 +67,10 @@ hr.rounded {
     width: 100%;
 }
 
-#xes-container {
-    width: 100%;
-}
 .table-container {
     max-height: 300px; 
     overflow-y: auto;
+    width: 100%;
 }
 
 #textbox-container {

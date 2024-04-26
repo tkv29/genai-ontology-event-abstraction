@@ -54,25 +54,28 @@ class EventAbstractor:
         root_class = OWL.Thing
         return self.__get_class_depth(root_class)
 
-    def __create_ontology_string(self, class_uri, processed_classes, depth, current_depth=0, indent=""):
-        if current_depth > depth:
-            return ""
-
-        class_label = self.__get_label(class_uri)
-        ontology_string = indent + class_label + "\n"
-
-        if class_uri not in processed_classes:
-            processed_classes.add(class_uri)
-            subclasses = self.__get_subclasses(class_uri)
-            for subclass in subclasses:
-                ontology_string += self.__create_ontology_string(subclass, processed_classes, depth, current_depth + 1, indent + "  ")
-
+    def __create_ontology_string(self, class_uri, processed_classes, selected_depth, current_depth=0, indent=""):
+        ontology_string = ""
+        if current_depth < selected_depth:
+            if class_uri not in processed_classes:
+                processed_classes.add(class_uri)
+                subclasses = self.__get_subclasses(class_uri)
+                for subclass in subclasses:
+                    ontology_string += self.__create_ontology_string(subclass, processed_classes, selected_depth, current_depth + 1, indent)
+        else:
+            class_label = self.__get_label(class_uri)
+            ontology_string += indent + f"{current_depth}. " + class_label + "\n"
+            if class_uri not in processed_classes:
+                processed_classes.add(class_uri)
+                subclasses = self.__get_subclasses(class_uri)
+                for subclass in subclasses:
+                    ontology_string += self.__create_ontology_string(subclass, processed_classes, selected_depth, current_depth + 1, indent + " ")
         return ontology_string
 
-    def create_ontology_representation(self, depth):
+    def create_ontology_representation(self, selected_depth):
         root_class = OWL.Thing
         processed_classes = set()
-        ontology_string = self.__create_ontology_string(root_class, processed_classes, depth)
+        ontology_string = self.__create_ontology_string(root_class, processed_classes, selected_depth)
         return ontology_string
     
     def __create_visualization_graph(self):
@@ -97,56 +100,109 @@ class EventAbstractor:
             label = uri.split("/")[-1].replace("_", " ")
         return str(label)
 
-    def visualize_graph(self, depth):
+    def visualize_graph(self, abstraction_level):
         visualization_graph = self.__create_visualization_graph()
-
-        # Filter the graph based on the selected depth
-        filtered_nodes = [node for node, data in visualization_graph.nodes(data=True) if data['depth'] <= depth]
-        filtered_graph = visualization_graph.subgraph(filtered_nodes)
-
+        nodes_to_add = [node for node in visualization_graph.nodes() if str(node) != "owl#Thing"]
+        
         net = Network(height='800px', width='100%', bgcolor='#ffffff', font_color='black')
-        net.from_nx(filtered_graph)
-
-        for node in filtered_graph.nodes():
-            depth_level = filtered_graph.nodes[node]['depth']
+        net.from_nx(visualization_graph.subgraph(nodes_to_add))
+        
+        marked_nodes = set(node for node, data in visualization_graph.nodes(data=True) if data['depth'] == abstraction_level)
+        descendants = set(descendant for node in marked_nodes for descendant in nx.descendants(visualization_graph, node))
+        
+        for node in nodes_to_add:
             net_node = net.get_node(node)
-            if depth_level == depth:
-                net_node['color'] = '#FAA0A0'
-
+            if node in marked_nodes:
+                net_node['color'] = '#8B0000'  # Red color for target abstraction level
+            elif node in descendants:
+                net_node['color'] = '#008000'  # Green for potential abstraction
+        
+        for edge in net.edges:
+            source, target = edge['from'], edge['to']
+            if (source in marked_nodes and target in descendants) or (source in descendants and target in descendants):
+                edge['color'] = '#008000'  # Green for edges of potential abstraction
+                edge['width'] = 3  
+            else:
+                edge['width'] = 1  
+        
         net.repulsion(node_distance=420, central_gravity=0.33, spring_length=110, spring_strength=0.10, damping=0.95)
         html_file = net.generate_html()
         modified_html = html_file.replace('lib/bindings/utils.js', f'{settings.STATIC_URL}js/utils.js')
+        
         return modified_html
     
-    def abstract(self, depth):
-        ontology_string = self.create_ontology_representation(depth)
-
+    def abstract(self, view, abstraction_level):
         event_log_df = self.xes_df
         activities = event_log_df["activity"]
 
-        messages = [
-            {"role": "system", "content": p.IDENTIFY_CONTEXT},
-            {"role": "user", "content": p.IDENTIFY_PROMPT + "\n" + "\n".join(activities)},
-        ]
-        relevant_activities = u.query_gpt(messages=messages, tools=fc.TOOLS, tool_choice={"type": "function", "function": {"name": "extract_medication_rows"}})
+        self.update_progress(view, 0, "Identifying relevant activities related to medications")
+
+        relevant_activities = self.__identify_relevant_activities(activities)
+        relevant_activities_df = event_log_df[event_log_df["activity"].isin(relevant_activities)]
+
+        self.update_progress(view, 1, "Extracting Medication Names from Relevant Activities")
+        relevant_activities_df["medication"] = relevant_activities_df["activity"].apply(self.__extract_medication)
+
+        self.update_progress(view, 2, "Abstracting medication names")
+        ontology_string = self.create_ontology_representation(abstraction_level)
+        relevant_activities_df["abstracted_medication"] = relevant_activities_df["medication"].apply(
+            lambda medication: self.__abstract_medication(ontology_string, medication, abstraction_level)
+        )
+
+        self.update_progress(view, 3, "Finished")
+        return relevant_activities_df
+
+
+    @staticmethod
+    def __identify_relevant_activities(activities):
+        identify_messages = p.IDENTIFY_MESSAGES[:]
+        identify_messages.append(
+            {
+                "role": "user",
+                "content": activities.to_string(),
+            }
+        )
+        relevant_activities = u.query_gpt(
+            messages=identify_messages,
+            tools=fc.TOOLS,
+            tool_choice={"type": "function", "function": {"name": "extract_medication_rows"}}
+        )
+        return relevant_activities
+
+    @staticmethod
+    def __extract_medication(activity):
+        extraction_messages = p.EXTRACTION_MESSAGES[:]
+        extraction_messages.append(
+            {
+                "role": "user",
+                "content": activity,
+            }
+        )
+        medication = u.query_gpt(messages=extraction_messages)
+        return medication
     
-        filtered_df = event_log_df[event_log_df["activities"].isin(relevant_activities)]
+    @staticmethod
+    def __abstract_medication(ontology, medication, abstraction_level):
+        abstraction_messages = p.ABSTRACTION_MESSAGES[:]
+        abstraction_messages.extend([
+            {
+                "role": "user",
+                "content": "Here the hierachy you should use as reference: \n" + ontology + "\n Check if the following medicine is part of the hierarchy and map them to the uppermost class on the target abstraction level. If the term is not part of the hierarchy, return N/A. \n" + "The target abstraction level should be: " + "'" +str(abstraction_level) + ".'" ,
+            },
+            {
+                "role": "user",
+                "content": "What is the uppermost class of " + medication + "?",
+            }
+        ])
 
-
-
-        # for activity in relevant_activities:
-        #     messages = [
-        #         {"role": "system", "content": p.ABSTRACTION_CONTEXT},
-        #         {"role": "user", "content": p.ABSTRACTION_PROMPT_1 + ontology_string + p.ABSTRACTION_PROMPT_2 + activity},
-        #     ]
-        #     answer = u.query_gpt(messages=messages)
-        #     print(answer)
+        abstracted_medication = u.query_gpt(messages=abstraction_messages)
+        return abstracted_medication
 
     def update_progress(self, view, current_step, module_name):
         """Update the progress of the extraction."""
         if view is not None:
             percentage = round(
-                (current_step / len(self.get_configuration().modules)) * 100
+                (current_step / 3) * 100
             )
             view.request.session["progress"] = percentage
             view.request.session["status"] = module_name

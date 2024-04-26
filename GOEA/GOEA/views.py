@@ -52,19 +52,19 @@ class ExtractionView(TemplateView):
         
         slider_value = self.request.GET.get('slider_value')
         if slider_value:
-            selected_depth = int(slider_value)
+            abstraction_level = int(slider_value)
         else:
-            selected_depth = event_abstractor.get_max_depth()
+            abstraction_level = 1
 
         
         context.update({
-            "selected_depth": selected_depth,
-            "ontology_string": event_abstractor.create_ontology_representation(selected_depth),
-            "ontology_graph": event_abstractor.visualize_graph(selected_depth),
+            "abstraction_level": abstraction_level,
+            "ontology_string": event_abstractor.create_ontology_representation(abstraction_level),
+            "ontology_graph": event_abstractor.visualize_graph(abstraction_level),
             "max_depth": event_abstractor.get_max_depth()
         })
         
-        self.request.session["selected_depth"] = selected_depth
+        self.request.session["abstraction_level"] = abstraction_level
 
         return context
     
@@ -86,9 +86,15 @@ class ExtractionView(TemplateView):
     
     def post(self, request):
         event_abstractor = EventAbstractor.get_instance()
-        selected_depth = request.session.get("selected_depth")
-        event_abstractor.abstract(selected_depth)
+        target_abstraction_depth = request.session.get("abstraction_level")
+        abstraction_df = event_abstractor.abstract(self, target_abstraction_depth)
+        request.session["abstraction_table"] = abstraction_df.to_html()
         return redirect('result_page')
 
 class ResultPageView(TemplateView):
     template_name = 'result_page.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["abstraction_table"] = self.request.session.get("abstraction_table")
+        return context

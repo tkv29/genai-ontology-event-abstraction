@@ -43,6 +43,7 @@ def query_gpt(
         return _response
 
     response = make_api_call()
+    print(response)
     if tool_choice != "none":
         api_response = response.choices[0].message.tool_calls[0].function.arguments
         output = json.loads(api_response)["output"]

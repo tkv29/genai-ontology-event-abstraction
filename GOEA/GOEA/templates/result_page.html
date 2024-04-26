@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result Page</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="main_body">
+
+    <div class="table-container">{{ abstraction_table|safe }}</div>
+
+    <a href="{% url 'extraction_page' %}">
+        <button class="btn btn-outline-secondary btn-lg mt-4 btn-block">Return To Extraction Page</button>
+    </a>
+    <a href="{% url 'upload_page' %}">
+        <button class="btn btn-outline-secondary btn-lg mt-4 btn-block">Return To Upload Page</button>
+    </a>
+</body>
+
+</html>
