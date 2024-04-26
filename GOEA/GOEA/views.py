@@ -12,6 +12,7 @@ class UploadPageView(TemplateView):
 
     def get(self, request):
         form = UploadFilesForm()
+        self.request.session.flush()
         self.clear_upload_directory()
         return render(request, self.template_name, {'form': form})
 
@@ -19,6 +20,7 @@ class UploadPageView(TemplateView):
         form = UploadFilesForm(request.POST, request.FILES)
 
         if form.is_valid():
+            self.request.session["custom_ontology_used"] = form.cleaned_data['custom_ontology_used']
             uploaded_files = form.save()
             xes_path = uploaded_files.xes_file_path
             owl_path = uploaded_files.owl_file_path

@@ -9,6 +9,8 @@ class UploadedFiles(models.Model):
     xes_file_path = models.CharField(max_length=255)
     owl_file_path = models.CharField(max_length=255)
 
+    custom_ontology_used = models.BooleanField(default=False)
+
     def save(self, *args, **kwargs):
         # Check if the files are uploaded
         if self.xes_file and self.owl_file:

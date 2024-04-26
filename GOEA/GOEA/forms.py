@@ -4,4 +4,4 @@ from .models import UploadedFiles
 class UploadFilesForm(forms.ModelForm):
     class Meta:
         model = UploadedFiles
-        fields = ['xes_file', 'owl_file']
+        fields = ['xes_file', 'owl_file', 'custom_ontology_used']

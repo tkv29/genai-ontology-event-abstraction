@@ -29,6 +29,11 @@
             {% if form.owl_file.errors %}
                 <div class="text-danger">{{ form.owl_file.errors }}</div>
             {% endif %}
+            <div>
+                <label for="{{ form.custom_ontology_used.id_for_label }}">Does the OWL file contain a custom ontology?:</label>
+                {{ form.custom_ontology_used }}
+            </div>
+        
         </div>
     </div>
         <button type="submit" class="btn btn-outline-secondary btn-lg mt-4 btn-block">Next</button>
