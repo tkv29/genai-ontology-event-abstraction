@@ -34,7 +34,6 @@ class UploadPageView(TemplateView):
 
     def clear_upload_directory(self):
         directory = os.path.join(settings.BASE_DIR, 'media')
-        print(directory)
         for filename in os.listdir(directory):
             file_path = os.path.join(directory, filename)
             try:

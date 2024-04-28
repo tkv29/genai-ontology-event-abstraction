@@ -34,7 +34,6 @@ def query_gpt(messages, max_tokens=MAX_TOKENS, temperature=TEMPERATURE_SUMMARIZI
         return response
 
     response = make_api_call()
-    print(response)
 
     if tool_choice != "none":
         api_response = response.choices[0].message.tool_calls[0].function.arguments

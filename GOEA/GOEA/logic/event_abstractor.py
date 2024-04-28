@@ -21,7 +21,6 @@ class EventAbstractor:
 
     def __init__(self, xes_path=None, owl_path=None):
         self.xes_path = xes_path
-        print(xes_path)
         self.owl_path = owl_path
         self.data = None
         if xes_path and owl_path:
