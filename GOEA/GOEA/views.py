@@ -1,12 +1,13 @@
 from django.http import FileResponse, JsonResponse
 from django.views.generic import TemplateView, View
 from django.shortcuts import render, redirect
-from .forms import UploadFilesForm
-from .logic.event_abstractor import EventAbstractor
+from GOEA.forms import UploadFilesForm
+from GOEA.logic.event_abstractor import EventAbstractor
+from GOEA.logic import utils as u
 from . import settings
 import os
 import shutil
-from .logic import utils as u
+
 
 class UploadPageView(TemplateView):
     template_name = 'upload_page.html'
@@ -43,7 +44,7 @@ class UploadPageView(TemplateView):
                     shutil.rmtree(file_path)
             except Exception as e:
                 print(f'Failed to delete {file_path}. Reason: {e}')
-    
+
 
 class ExtractionView(TemplateView):
     template_name = 'extraction_page.html'
@@ -52,25 +53,24 @@ class ExtractionView(TemplateView):
         context = super().get_context_data(**kwargs)
         event_abstractor = EventAbstractor.get_instance()
         context["xes_html"] = event_abstractor.get_xes_df().to_html()
-        
+
         slider_value = self.request.GET.get('slider_value')
         if slider_value:
             abstraction_level = int(slider_value)
         else:
             abstraction_level = 1
 
-        
         context.update({
             "abstraction_level": abstraction_level,
             "ontology_string": event_abstractor.create_ontology_representation(abstraction_level),
             "ontology_graph": event_abstractor.visualize_graph(abstraction_level),
             "max_depth": event_abstractor.get_max_depth()
         })
-        
+
         self.request.session["abstraction_level"] = abstraction_level
 
         return context
-    
+
     def get(self, request, *args, **kwargs):
         """Return a JSON response with the current progress of the pipeline."""
         is_ajax = request.headers.get("X-Requested-With") == "XMLHttpRequest"
@@ -86,7 +86,7 @@ class ExtractionView(TemplateView):
         self.request.session.save()
 
         return super().get(request, *args, **kwargs)
-    
+
     def post(self, request):
         event_abstractor = EventAbstractor.get_instance()
         target_abstraction_depth = request.session.get("abstraction_level")
@@ -94,6 +94,7 @@ class ExtractionView(TemplateView):
         abstraction_df = event_abstractor.abstract(self, target_abstraction_depth, custom_ontology_used)
         request.session["abstraction_table"] = abstraction_df.to_html()
         return redirect('result_page')
+
 
 class ResultPageView(TemplateView):
     template_name = 'result_page.html'
@@ -103,15 +104,13 @@ class ResultPageView(TemplateView):
         context["abstraction_table"] = self.request.session.get("abstraction_table")
         return context
 
+
 class DownloadPageView(View):
-        
     def post(self, request, *args, **kwargs):
         event_abstractor = EventAbstractor.get_instance()
         xes_file_path = u.dataframe_to_xes(event_abstractor.get_data())
-        file = open(xes_file_path, "rb")
-        response = FileResponse(file, as_attachment=True)
-        response[
-            "Content-Disposition"
-        ] = f'attachment; filename="{os.path.basename(xes_file_path)}"'
+        with open(xes_file_path, "rb") as file:
+            response = FileResponse(file, as_attachment=True)
+            response["Content-Disposition"] = f'attachment; filename="{os.path.basename(xes_file_path)}"'
 
         return response
