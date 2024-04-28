@@ -9,19 +9,14 @@
     flex-direction: column;
 }
 
-h1 {
+h1,h2,h3 {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 20px;
 }
 
-h2 {
-  text-align: center;
-}
-
-h3 {
-    text-align: center;
-    margin-bottom: 20px;
+a:hover {
+  text-decoration: none;
 }
 
 hr.rounded {
@@ -233,4 +228,3 @@ hr.rounded {
 .not_visible {
   display: none;
 }
-

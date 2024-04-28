@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <title>Result Page</title>
     {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
 </head>
 <body class="main_body">
 
+    <h1>Result</h1>
+    <h2>Abstracted Medication Event Log</h2>
     <div class="table-container">{{ abstraction_table|safe }}</div>
 
 
