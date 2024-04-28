@@ -35,6 +35,9 @@ class EventAbstractor:
 
     def get_xes_df(self):
         return self.xes_df
+    
+    def get_data(self):
+        return self.data
 
     def __read_owl_file(self, file_path):
         ontology_graph = Graph()
@@ -152,6 +155,8 @@ class EventAbstractor:
         )
 
         self.update_progress(view, 3, "Finished")
+
+        self.data = relevant_activities_df
         return relevant_activities_df
 
 

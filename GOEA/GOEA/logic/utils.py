@@ -1,7 +1,10 @@
 import os
 import json
 from openai import OpenAI
+import pandas as pd
+import pm4py
 from . import function_calls as function_calls
+from django.conf import settings
 
 
 oaik = os.environ.get(
@@ -55,3 +58,41 @@ def query_gpt(
     else:
         output = response.choices[0].message.content
     return output
+
+def dataframe_to_xes(df, name):
+    """Conversion from dataframe to xes file."""
+
+    # Convert 'start' and 'end' columns to datetime
+    df["start_timestamp"] = pd.to_datetime(df["start_timestamp"])
+
+    # Renaming columns to for Disco
+    df.rename(
+        columns={
+            "start_timestamp": "time:timestamp",  # Disco takes time:timestamp as timestamp key
+            "medication_abstracted": "concept:name",  # We want Disco to take medications as activites
+        },
+        inplace=True,
+    )
+
+    # Sorting Dataframe for start timestamp
+    df = df.sort_values("time:timestamp")
+
+    # Converting DataFrame to XES
+    parameters = {
+        pm4py.objects.conversion.log.converter.Variants.TO_EVENT_LOG.value.Parameters.CASE_ID_KEY: "case:concept:name"
+    }
+    event_log = pm4py.objects.conversion.log.converter.apply(
+        df, parameters=parameters
+    )
+
+    output_path = settings.BASE / "GOEA/content/"
+    xes_file = output_path / name
+    pm4py.write_xes(
+        event_log,
+        xes_file,
+        activity_key="activity",
+        case_id_key="case:concept:name",
+        timestamp_key="time:timestamp",
+    )
+
+    return xes_file

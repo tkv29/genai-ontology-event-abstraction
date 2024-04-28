@@ -1,11 +1,12 @@
-from django.http import JsonResponse
-from django.views.generic import TemplateView
+from django.http import FileResponse, JsonResponse
+from django.views.generic import TemplateView, View
 from django.shortcuts import render, redirect
 from .forms import UploadFilesForm
 from .logic.event_abstractor import EventAbstractor
 from . import settings
 import os
 import shutil
+from .logic import utils as u
 
 class UploadPageView(TemplateView):
     template_name = 'upload_page.html'
@@ -100,3 +101,16 @@ class ResultPageView(TemplateView):
         context = super().get_context_data(**kwargs)
         context["abstraction_table"] = self.request.session.get("abstraction_table")
         return context
+
+class DownloadPageView(View):
+        
+    def post(self, request, *args, **kwargs):
+        event_abstractor = EventAbstractor.get_instance()
+        xes_file_path = u.dataframe_to_xes(event_abstractor.get_data())
+        file = open(xes_file_path, "rb")
+        response = FileResponse(file, as_attachment=True)
+        response[
+            "Content-Disposition"
+        ] = f'attachment; filename="{os.path.basename(xes_file_path)}"'
+
+        return response
