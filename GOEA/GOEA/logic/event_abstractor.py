@@ -136,7 +136,7 @@ class EventAbstractor:
         
         return modified_html
     
-    def abstract(self, view, abstraction_level):
+    def abstract(self, view, abstraction_level, custom_ontology_used):
         event_log_df = self.xes_df
         activities = event_log_df["activity"]
 
@@ -150,8 +150,9 @@ class EventAbstractor:
 
         self.update_progress(view, 2, "Abstracting Drug Medicament on Target Abstraction Level")
         ontology_string = self.create_ontology_representation(abstraction_level)
+        
         relevant_activities_df["abstracted_medication"] = relevant_activities_df["medication"].apply(
-            lambda medication: self.__abstract_medication(ontology_string, medication, abstraction_level)
+            lambda medication: self.__abstract_medication(ontology_string, medication, abstraction_level, custom_ontology_used)
         )
 
         self.update_progress(view, 3, "Finished")
@@ -189,18 +190,33 @@ class EventAbstractor:
         return medication
     
     @staticmethod
-    def __abstract_medication(ontology, medication, abstraction_level):
-        abstraction_messages = p.ABSTRACTION_MESSAGES[:]
-        abstraction_messages.extend([
-            {
-                "role": "user",
-                "content": "Here the hierachy you should use as reference: \n" + ontology + "\n Check if the following medicine is part of the hierarchy and map them to the uppermost class on the target abstraction level. If the term is not part of the hierarchy, return N/A. \n" + "The target abstraction level should be: " + "'" +str(abstraction_level) + ".'" ,
-            },
-            {
-                "role": "user",
-                "content": "What is the uppermost class of " + medication + " which is on the level: " + str(abstraction_level) + "?",
-            }
-        ])
+    def __abstract_medication(ontology, medication, abstraction_level, custom_ontology_used):
+        
+        if custom_ontology_used == "True":
+            abstraction_messages = p.CUSTOM_ABSTRACTION_MESSAGES[:]
+            abstraction_messages.extend([
+                {
+                    "role": "user",
+                    "content": "Here the hierachy you should use as reference: \n" + ontology + "\n Classify the medication in one of the uppermost classes on the target abstraction level. If it does not fit in any classes, return N/A. \n" + "The target abstraction level should be: " + "'" +str(abstraction_level) + ".'" ,
+                },
+                {
+                    "role": "user",
+                    "content": "In which category on abstraction level: " + str(abstraction_level) + " would " + medication + " fit in?",
+                }
+            ])
+     
+        else:
+            abstraction_messages = p.ABSTRACTION_MESSAGES[:]
+            abstraction_messages.extend([
+                {
+                    "role": "user",
+                    "content": "Here the hierachy you should use as reference: \n" + ontology + "\n Check if the following medicine is part of the hierarchy and map them to the uppermost class on the target abstraction level. If the term is not part of the hierarchy, return N/A. \n" + "The target abstraction level should be: " + "'" +str(abstraction_level) + ".'" ,
+                },
+                {
+                    "role": "user",
+                    "content": "What is the uppermost class of " + medication + " which is on the level: " + str(abstraction_level) + "?",
+                }
+            ])
 
         abstracted_medication = u.query_gpt(messages=abstraction_messages)
         return abstracted_medication

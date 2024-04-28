@@ -90,7 +90,8 @@ class ExtractionView(TemplateView):
     def post(self, request):
         event_abstractor = EventAbstractor.get_instance()
         target_abstraction_depth = request.session.get("abstraction_level")
-        abstraction_df = event_abstractor.abstract(self, target_abstraction_depth)
+        custom_ontology_used = request.session.get("custom_ontology_used")
+        abstraction_df = event_abstractor.abstract(self, target_abstraction_depth, custom_ontology_used)
         request.session["abstraction_table"] = abstraction_df.to_html()
         return redirect('result_page')
 

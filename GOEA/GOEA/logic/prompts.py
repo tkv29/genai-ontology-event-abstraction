@@ -173,4 +173,55 @@ ABSTRACTION_MESSAGES =[
 ]
 
 CUSTOM_ABSTRACTION_MESSAGES = [
+    {
+        "role": "system",
+        "content": """You are an medication expert. Given a hieracevel (number) and a medication, classify the medication to one upper class on the target abstraction level.
+        That means categorize the medication in a upper class. If you think that the medication is not fitting in any of the categories, output 'N/A'. """
+    },
+    {
+        "role": "user",
+        "content": """
+        Here is the hierachy you should use as reference:
+        1. Non-steroidal anti-inflammatory drugs (NSAIDs)
+        1. Disease-modifying antirheumatic drugs (DMARDs)
+        1. Corticosteroids
+        1. Others
+
+        Classify the medication in one of the uppermost classes on the target abstraction level. If it does not fit in any classes, return N/A.
+
+        The target abstraction level should be: "1." """
+    },
+    {
+        "role": "user",
+        "content": "In which category on abstraction level: 1 would Ibuprofen fit in?"
+    },
+    {
+        "role": "assistant",
+        "content": "Non-steroidal anti-inflammatory drugs (NSAIDs)"
+    
+    },
+    {
+        "role": "user",
+        "content": "In which category on abstraction level: 1 would Nefopam hydrochloride fit in?"
+    },
+    {
+        "role": "assistant",
+        "content": "Others"
+    },
+    {
+        "role": "user",
+        "content": "In which category on abstraction level: 1 would Methylprednisolone fit in?"
+    },
+    {
+        "role": "assistant",
+        "content": "Corticosteroids"
+    },
+    {
+        "role": "user",
+        "content": "In which category on abstraction level: 1 would Azapropazone fit in?"
+    },
+    {
+        "role": "assistant",
+        "content": "Non-steroidal anti-inflammatory agent"
+    },
 ]
