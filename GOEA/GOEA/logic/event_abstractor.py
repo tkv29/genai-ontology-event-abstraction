@@ -142,27 +142,37 @@ class EventAbstractor:
 
     def abstract(self, view, abstraction_level, custom_ontology_used):
         event_log_df = self.xes_df
-        activities = event_log_df["activity"]
 
-        self.update_progress(view, 0, "Identifying Relevant Activities Related to Medications")
+        total_rows = len(event_log_df)
+        event_log_df["medication"] = event_log_df.apply(lambda row: self._start_extraction_medication(row, view, total_rows), axis=1)
+        event_log_df_filtered = event_log_df.loc[event_log_df['medication'] != 'N/A']
 
-        relevant_activities = self._identify_relevant_activities(activities)
-        relevant_activities_df = event_log_df[event_log_df["activity"].isin(relevant_activities)]
-
-        self.update_progress(view, 1, "Extracting Drug or Medicament of Activities")
-        relevant_activities_df["medication"] = relevant_activities_df["activity"].apply(self._extract_medication)
-
-        self.update_progress(view, 2, "Abstracting Drug Medicament on Target Abstraction Level")
         ontology_string = self.create_ontology_representation(abstraction_level)
-
-        relevant_activities_df["abstracted_medication"] = relevant_activities_df["medication"].apply(
-            lambda medication: self._abstract_medication(ontology_string, medication, abstraction_level, custom_ontology_used)
+        total_rows = len(event_log_df_filtered)
+        event_log_df_filtered = event_log_df_filtered.reset_index(drop=True)
+        event_log_df_filtered["abstracted_medication"] = event_log_df_filtered.apply(
+            lambda row: self._start_medication_abstraction(
+                row, ontology_string, abstraction_level, custom_ontology_used, view, total_rows
+            ),
+            axis=1
         )
+        event_log_df_filtered = event_log_df_filtered.loc[event_log_df_filtered['abstracted_medication'] != 'N/A']
 
-        self.update_progress(view, 3, "Finished")
+        self.data = event_log_df_filtered
+        return event_log_df_filtered
 
-        self.data = relevant_activities_df
-        return relevant_activities_df
+    def _start_extraction_medication(self, row, view, total_rows):
+        medication = self._extract_medication(row["activity"])
+        row_number = row.name + 1
+        self._update_progress(view, row_number, total_rows, "Extracting Drug or Medicament of Activities")
+        return medication
+
+    def _start_medication_abstraction(self, row, ontology_string, abstraction_level, custom_ontology_used, view, total_rows):
+        medication = row["medication"]
+        abstracted_medication = self._abstract_medication(ontology_string, medication, abstraction_level, custom_ontology_used)
+        row_number = row.name + 1
+        self._update_progress(view, row_number, total_rows, "Abstracting Drug Medicament on Target Abstraction Level")
+        return abstracted_medication
 
     @staticmethod
     def _identify_relevant_activities(activities):
@@ -232,10 +242,10 @@ class EventAbstractor:
         abstracted_medication = u.query_gpt(messages=abstraction_messages)
         return abstracted_medication
 
-    def update_progress(self, view, current_step, module_name):
+    def _update_progress(self, view, current_step, total_steps, status):
         """Update the progress of the extraction."""
         if view is not None:
-            percentage = round((current_step / 3) * 100)
+            percentage = round((current_step / total_steps) * 100)
             view.request.session["progress"] = percentage
-            view.request.session["status"] = module_name
+            view.request.session["status"] = status
             view.request.session.save()

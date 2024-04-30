@@ -16,16 +16,8 @@ function updateProgressBar() {
             </div>
             ${current_status ? `<div class="progress-container"><p>${current_status}</p></div>` : '<div class="progress-container"></div>'}
         `;
+            setTimeout(updateProgressBar, 1000); // Fetch progress again after 1 second
 
-            // If the task is not complete, continue checking for progress // hier muss data.progress rein
-            if (data.progress === 100) {
-                // Hide the progress bar and show the result button
-                execute_button.classList.add('not_visible');
-
-            } else {
-                // If progress is not 100, continue fetching progress
-                setTimeout(updateProgressBar, 1000); // Fetch progress again after 1 second
-            }
         },
         error: function() {
             console.log("Error occurred while fetching progress. Alternatively, a spinning loading wheel will be displayed.");
