@@ -163,14 +163,14 @@ class EventAbstractor:
 
     def _start_extraction_medication(self, row, view, total_rows):
         medication = self._extract_medication(row["activity"])
-        row_number = row.name + 1
+        row_number = row.name
         self._update_progress(view, row_number, total_rows, "Extracting Drug or Medicament of Activities")
         return medication
-
+    
     def _start_medication_abstraction(self, row, ontology_string, abstraction_level, custom_ontology_used, view, total_rows):
         medication = row["medication"]
         abstracted_medication = self._abstract_medication(ontology_string, medication, abstraction_level, custom_ontology_used)
-        row_number = row.name + 1
+        row_number = row.name
         self._update_progress(view, row_number, total_rows, "Abstracting Drug Medicament on Target Abstraction Level")
         return abstracted_medication
 

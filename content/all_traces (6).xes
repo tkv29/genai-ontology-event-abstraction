@@ -1,0 +1,2816 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<log xes.version="1849-2016" xes.features="nested-attributes" xmlns="http://www.xes-standard.org/">
+	<extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext" />
+	<extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext" />
+	<string key="origin" value="csv" />
+	<trace>
+		<string key="concept:name" value="77" />
+		<event>
+			<string key="concept:name" value="addition of Hydroxychloroquine to treatment plan" />
+			<date key="time:timestamp" value="2020-01-09T00:00:00" />
+			<date key="start_timestamp" value="2020-01-09T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="impacting work and childcare" />
+			<date key="time:timestamp" value="2020-02-21T00:00:00" />
+			<date key="start_timestamp" value="2020-02-21T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="starting to experience symptoms" />
+			<date key="time:timestamp" value="2020-02-21T00:00:00" />
+			<date key="start_timestamp" value="2020-02-21T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="diagnosis of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2020-06-15T00:00:00" />
+			<date key="start_timestamp" value="2020-06-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="challenging journey to diagnosis" />
+			<date key="time:timestamp" value="2020-06-15T00:00:00" />
+			<date key="start_timestamp" value="2020-06-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="intensifying pain leads to seeking help" />
+			<date key="time:timestamp" value="2020-06-15T00:00:00" />
+			<date key="start_timestamp" value="2020-06-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="effectiveness of Methotrexate in reducing pain" />
+			<date key="time:timestamp" value="2020-06-20T00:00:00" />
+			<date key="start_timestamp" value="2020-06-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescription of Methotrexate for inflammation" />
+			<date key="time:timestamp" value="2020-06-20T00:00:00" />
+			<date key="start_timestamp" value="2020-06-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Prescription of Prednisone for severe flares" />
+			<date key="time:timestamp" value="2020-07-10T00:00:00" />
+			<date key="start_timestamp" value="2020-07-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="regular consultations with rheumatologist for monitoring" />
+			<date key="time:timestamp" value="2020-09-01T00:00:00" />
+			<date key="start_timestamp" value="2020-09-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="improvement in quality of life with Hydroxychloroquine" />
+			<date key="time:timestamp" value="2020-09-01T00:00:00" />
+			<date key="start_timestamp" value="2020-09-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="use of NSAIDs for pain management" />
+			<date key="time:timestamp" value="2020-09-01T00:00:00" />
+			<date key="start_timestamp" value="2020-09-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="rapid relief from Prednisone during flares" />
+			<date key="time:timestamp" value="2020-10-07T00:00:00" />
+			<date key="start_timestamp" value="2020-10-07T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="58" />
+		<event>
+			<string key="concept:name" value="seeking medical advice due to symptoms" />
+			<date key="time:timestamp" value="2020-03-02T00:00:00" />
+			<date key="start_timestamp" value="2020-03-02T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="noticing initial symptoms of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2020-03-02T00:00:00" />
+			<date key="start_timestamp" value="2020-03-02T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting various healthcare professionals for diagnosis" />
+			<date key="time:timestamp" value="2020-04-15T00:00:00" />
+			<date key="start_timestamp" value="2020-04-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="receiving Rheumatoid Arthritis diagnosis after tests" />
+			<date key="time:timestamp" value="2020-04-15T00:00:00" />
+			<date key="start_timestamp" value="2020-04-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="treatment plan including Methotrexate, Prednisone, Hydroxychloroquine" />
+			<date key="time:timestamp" value="2020-04-20T00:00:00" />
+			<date key="start_timestamp" value="2020-04-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="experiencing side effects and benefits of medications" />
+			<date key="time:timestamp" value="2020-04-20T00:00:00" />
+			<date key="start_timestamp" value="2020-04-20T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="69" />
+		<event>
+			<string key="concept:name" value="noticing stiffness and swelling in joints" />
+			<date key="time:timestamp" value="2020-03-03T00:00:00" />
+			<date key="start_timestamp" value="2020-03-03T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="brushing off symptoms as work-related" />
+			<date key="time:timestamp" value="2020-03-03T00:00:00" />
+			<date key="start_timestamp" value="2020-03-03T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="worsening symptoms affecting daily life" />
+			<date key="time:timestamp" value="2020-03-03T00:00:00" />
+			<date key="start_timestamp" value="2020-03-03T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting rheumatologist after a month" />
+			<date key="time:timestamp" value="2020-04-05T00:00:00" />
+			<date key="start_timestamp" value="2020-04-05T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="confirming Rheumatoid Arthritis diagnosis after tests" />
+			<date key="time:timestamp" value="2020-05-05T00:00:00" />
+			<date key="start_timestamp" value="2020-05-05T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="initiating Methotrexate for joint inflammation" />
+			<date key="time:timestamp" value="2020-05-15T00:00:00" />
+			<date key="start_timestamp" value="2020-05-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="experiencing nausea and fatigue with Methotrexate" />
+			<date key="time:timestamp" value="2020-05-15T00:00:00" />
+			<date key="start_timestamp" value="2020-05-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="experiencing weight gain with Prednisone" />
+			<date key="time:timestamp" value="2020-05-15T00:00:00" />
+			<date key="start_timestamp" value="2020-05-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="starting Prednisone for acute pain flares" />
+			<date key="time:timestamp" value="2020-05-15T00:00:00" />
+			<date key="start_timestamp" value="2020-05-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="adding Hydroxychloroquine for disease control" />
+			<date key="time:timestamp" value="2020-06-10T00:00:00" />
+			<date key="start_timestamp" value="2020-06-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="managing symptoms effectively with Hydroxychloroquine" />
+			<date key="time:timestamp" value="2020-06-10T00:00:00" />
+			<date key="start_timestamp" value="2020-06-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="introducing Adalimumab for persistent symptoms" />
+			<date key="time:timestamp" value="2020-07-20T00:00:00" />
+			<date key="start_timestamp" value="2020-07-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="reducing inflammation and enhancing mobility with Adalimumab" />
+			<date key="time:timestamp" value="2020-07-20T00:00:00" />
+			<date key="start_timestamp" value="2020-07-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="regular consultations for medication adjustments and monitoring" />
+			<date key="time:timestamp" value="2020-07-20T00:00:00" />
+			<date key="start_timestamp" value="2020-07-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="finding Rheumatoid Arthritis medications transformative" />
+			<date key="time:timestamp" value="2020-07-20T00:00:00" />
+			<date key="start_timestamp" value="2020-07-20T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="91" />
+		<event>
+			<string key="concept:name" value="diagnosis process and consultations" />
+			<date key="time:timestamp" value="2020-03-04T00:00:00" />
+			<date key="start_timestamp" value="2020-03-04T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="experiencing initial symptoms of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2020-04-03T00:00:00" />
+			<date key="start_timestamp" value="2020-04-03T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="diagnosis of Rheumatoid Arthritis by rheumatologist" />
+			<date key="time:timestamp" value="2020-05-20T00:00:00" />
+			<date key="start_timestamp" value="2020-05-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="trying different medications for treatment" />
+			<date key="time:timestamp" value="2020-05-20T00:00:00" />
+			<date key="start_timestamp" value="2020-05-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Methotrexate reducing joint pain and swelling" />
+			<date key="time:timestamp" value="2020-05-25T00:00:00" />
+			<date key="start_timestamp" value="2020-05-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Prednisone managing acute flare-ups" />
+			<date key="time:timestamp" value="2020-05-25T00:00:00" />
+			<date key="start_timestamp" value="2020-05-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="medications prescribed for managing R.A" />
+			<date key="time:timestamp" value="2020-05-25T00:00:00" />
+			<date key="start_timestamp" value="2020-05-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting rheumatologist, general practitioners, physiotherapist" />
+			<date key="time:timestamp" value="2020-06-15T00:00:00" />
+			<date key="start_timestamp" value="2020-06-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="support from healthcare professionals in managing R.A" />
+			<date key="time:timestamp" value="2020-06-15T00:00:00" />
+			<date key="start_timestamp" value="2020-06-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Hydroxychloroquine improving joint mobility" />
+			<date key="time:timestamp" value="2020-06-15T00:00:00" />
+			<date key="start_timestamp" value="2020-06-15T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="89" />
+		<event>
+			<string key="concept:name" value="visiting various healthcare professionals" />
+			<date key="time:timestamp" value="2020-03-20T00:00:00" />
+			<date key="start_timestamp" value="2020-03-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="challenging diagnostic journey with initial suspicions" />
+			<date key="time:timestamp" value="2020-03-20T00:00:00" />
+			<date key="start_timestamp" value="2020-03-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="experiencing joint pain, stiffness, fatigue" />
+			<date key="time:timestamp" value="2020-03-20T00:00:00" />
+			<date key="start_timestamp" value="2020-03-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="symptoms hindering daily routine" />
+			<date key="time:timestamp" value="2020-03-20T00:00:00" />
+			<date key="start_timestamp" value="2020-03-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="seeking medical help for persistent symptoms" />
+			<date key="time:timestamp" value="2020-03-20T00:00:00" />
+			<date key="start_timestamp" value="2020-03-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="receiving confirmed diagnosis of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2020-07-15T00:00:00" />
+			<date key="start_timestamp" value="2020-07-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Prednisone providing quick relief with long-term side effects" />
+			<date key="time:timestamp" value="2020-08-01T00:00:00" />
+			<date key="start_timestamp" value="2020-08-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Methotrexate prescribed to slow disease progression" />
+			<date key="time:timestamp" value="2020-08-01T00:00:00" />
+			<date key="start_timestamp" value="2020-08-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Methotrexate reducing inflammation and joint pain" />
+			<date key="time:timestamp" value="2020-08-01T00:00:00" />
+			<date key="start_timestamp" value="2020-08-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Prednisone prescribed for managing flare-ups" />
+			<date key="time:timestamp" value="2020-08-01T00:00:00" />
+			<date key="start_timestamp" value="2020-08-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Hydroxychloroquine aiding in controlling symptoms and improving joint function" />
+			<date key="time:timestamp" value="2020-10-09T00:00:00" />
+			<date key="start_timestamp" value="2020-10-09T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Hydroxychloroquine added to treatment plan" />
+			<date key="time:timestamp" value="2020-10-09T00:00:00" />
+			<date key="start_timestamp" value="2020-10-09T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="medications crucial in improving quality of life" />
+			<date key="time:timestamp" value="2020-11-25T00:00:00" />
+			<date key="start_timestamp" value="2020-11-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="healthcare team closely monitoring progress and making adjustments" />
+			<date key="time:timestamp" value="2020-11-25T00:00:00" />
+			<date key="start_timestamp" value="2020-11-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Etanercept proving highly effective in managing Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2020-11-25T00:00:00" />
+			<date key="start_timestamp" value="2020-11-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Etanercept commenced due to uncontrolled symptoms" />
+			<date key="time:timestamp" value="2020-11-25T00:00:00" />
+			<date key="start_timestamp" value="2020-11-25T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="54" />
+		<event>
+			<string key="concept:name" value="receiving Methotrexate to slow progression" />
+			<date key="time:timestamp" value="2020-04-02T00:00:00" />
+			<date key="start_timestamp" value="2020-04-02T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="receiving Adalimumab for inflammation reduction" />
+			<date key="time:timestamp" value="2020-04-02T00:00:00" />
+			<date key="start_timestamp" value="2020-04-02T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting rheumatologists, orthopedists, and therapists" />
+			<date key="time:timestamp" value="2020-04-02T00:00:00" />
+			<date key="start_timestamp" value="2020-04-02T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="initial symptoms of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2020-04-02T00:00:00" />
+			<date key="start_timestamp" value="2020-04-02T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="starting medical diagnosis journey" />
+			<date key="time:timestamp" value="2020-04-02T00:00:00" />
+			<date key="start_timestamp" value="2020-04-02T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="receiving NSAIDs for pain relief" />
+			<date key="time:timestamp" value="2020-04-02T00:00:00" />
+			<date key="start_timestamp" value="2020-04-02T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="medications crucial for improving quality of life" />
+			<date key="time:timestamp" value="2020-04-02T00:00:00" />
+			<date key="start_timestamp" value="2020-04-02T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="87" />
+		<event>
+			<string key="concept:name" value="noticing joint stiffness and pain" />
+			<date key="time:timestamp" value="2020-04-02T00:00:00" />
+			<date key="start_timestamp" value="2020-04-02T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting rheumatologist for ongoing symptoms" />
+			<date key="time:timestamp" value="2020-05-01T00:00:00" />
+			<date key="start_timestamp" value="2020-05-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed NSAIDs for pain relief" />
+			<date key="time:timestamp" value="2020-07-01T00:00:00" />
+			<date key="start_timestamp" value="2020-07-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="receiving Rheumatoid Arthritis diagnosis" />
+			<date key="time:timestamp" value="2020-07-01T00:00:00" />
+			<date key="start_timestamp" value="2020-07-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="managing Rheumatoid Arthritis symptoms effectively" />
+			<date key="time:timestamp" value="2020-09-01T00:00:00" />
+			<date key="start_timestamp" value="2020-09-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="adjusting treatment plan with DMARDs" />
+			<date key="time:timestamp" value="2020-09-01T00:00:00" />
+			<date key="start_timestamp" value="2020-09-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting rheumatologist regularly for monitoring" />
+			<date key="time:timestamp" value="2020-09-01T00:00:00" />
+			<date key="start_timestamp" value="2020-09-01T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="61" />
+		<event>
+			<string key="concept:name" value="worsening pain affecting daily tasks" />
+			<date key="time:timestamp" value="2020-04-09T00:00:00" />
+			<date key="start_timestamp" value="2020-04-09T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="attributing symptoms to work schedule" />
+			<date key="time:timestamp" value="2020-04-09T00:00:00" />
+			<date key="start_timestamp" value="2020-04-09T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="starting to experience symptoms" />
+			<date key="time:timestamp" value="2020-04-09T00:00:00" />
+			<date key="start_timestamp" value="2020-04-09T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="challenges in diagnosing Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2020-04-25T00:00:00" />
+			<date key="start_timestamp" value="2020-04-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting primary care physician" />
+			<date key="time:timestamp" value="2020-04-25T00:00:00" />
+			<date key="start_timestamp" value="2020-04-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="receiving confirmed diagnosis after tests" />
+			<date key="time:timestamp" value="2020-06-15T00:00:00" />
+			<date key="start_timestamp" value="2020-06-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="risks of long-term Prednisone use" />
+			<date key="time:timestamp" value="2020-06-20T00:00:00" />
+			<date key="start_timestamp" value="2020-06-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="using Prednisone for immediate pain relief" />
+			<date key="time:timestamp" value="2020-06-20T00:00:00" />
+			<date key="start_timestamp" value="2020-06-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="experiencing initial side effects with Methotrexate" />
+			<date key="time:timestamp" value="2020-06-20T00:00:00" />
+			<date key="start_timestamp" value="2020-06-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="initiating Methotrexate for reducing inflammation" />
+			<date key="time:timestamp" value="2020-06-20T00:00:00" />
+			<date key="start_timestamp" value="2020-06-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="maintaining balance while managing Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2020-07-10T00:00:00" />
+			<date key="start_timestamp" value="2020-07-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting various specialists for monitoring progress" />
+			<date key="time:timestamp" value="2020-07-10T00:00:00" />
+			<date key="start_timestamp" value="2020-07-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="adding Hydroxychloroquine to treatment plan" />
+			<date key="time:timestamp" value="2020-07-10T00:00:00" />
+			<date key="start_timestamp" value="2020-07-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="effects of Hydroxychloroquine on inflammation" />
+			<date key="time:timestamp" value="2020-07-10T00:00:00" />
+			<date key="start_timestamp" value="2020-07-10T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="81" />
+		<event>
+			<string key="concept:name" value="attributing symptoms to demanding work" />
+			<date key="time:timestamp" value="2020-04-15T00:00:00" />
+			<date key="start_timestamp" value="2020-04-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="receiving referral to rheumatologist" />
+			<date key="time:timestamp" value="2020-04-15T00:00:00" />
+			<date key="start_timestamp" value="2020-04-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="seeking medical advice for persistent symptoms" />
+			<date key="time:timestamp" value="2020-04-15T00:00:00" />
+			<date key="start_timestamp" value="2020-04-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="noticing first symptoms of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2020-04-15T00:00:00" />
+			<date key="start_timestamp" value="2020-04-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="receiving treatment plan with medications" />
+			<date key="time:timestamp" value="2021-06-01T00:00:00" />
+			<date key="start_timestamp" value="2021-06-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting rheumatologist for medication adjustments" />
+			<date key="time:timestamp" value="2021-06-01T00:00:00" />
+			<date key="start_timestamp" value="2021-06-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribing Prednisone for acute flares relief" />
+			<date key="time:timestamp" value="2021-06-01T00:00:00" />
+			<date key="start_timestamp" value="2021-06-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribing Hydroxychloroquine for pain improvement" />
+			<date key="time:timestamp" value="2021-06-01T00:00:00" />
+			<date key="start_timestamp" value="2021-06-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="initiating Methotrexate for inflammation reduction" />
+			<date key="time:timestamp" value="2021-06-01T00:00:00" />
+			<date key="start_timestamp" value="2021-06-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="receiving confirmed diagnosis of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2021-06-15T00:00:00" />
+			<date key="start_timestamp" value="2021-06-15T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="50" />
+		<event>
+			<string key="concept:name" value="starting to experience joint pain" />
+			<date key="time:timestamp" value="2020-05-22T00:00:00" />
+			<date key="start_timestamp" value="2020-05-22T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="concerns about long-term Prednisone use" />
+			<date key="time:timestamp" value="2020-07-15T00:00:00" />
+			<date key="start_timestamp" value="2020-07-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed Prednisone for inflammation and pain" />
+			<date key="time:timestamp" value="2020-07-15T00:00:00" />
+			<date key="start_timestamp" value="2020-07-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="diagnosed with Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2020-07-15T00:00:00" />
+			<date key="start_timestamp" value="2020-07-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed Methotrexate to slow RA progression" />
+			<date key="time:timestamp" value="2020-07-30T00:00:00" />
+			<date key="start_timestamp" value="2020-07-30T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Methotrexate took weeks to show improvement" />
+			<date key="time:timestamp" value="2020-07-30T00:00:00" />
+			<date key="start_timestamp" value="2020-07-30T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed Hydroxychloroquine to control RA symptoms" />
+			<date key="time:timestamp" value="2020-08-20T00:00:00" />
+			<date key="start_timestamp" value="2020-08-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Etanercept prescribed when Methotrexate insufficient" />
+			<date key="time:timestamp" value="2020-11-10T00:00:00" />
+			<date key="start_timestamp" value="2020-11-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting various specialists for comprehensive care" />
+			<date key="time:timestamp" value="2020-11-10T00:00:00" />
+			<date key="start_timestamp" value="2020-11-10T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="86" />
+		<event>
+			<string key="concept:name" value="experiencing joint pain, swelling, stiffness" />
+			<date key="time:timestamp" value="2020-06-03T00:00:00" />
+			<date key="start_timestamp" value="2020-06-03T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="suspecting Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2020-06-25T00:00:00" />
+			<date key="start_timestamp" value="2020-06-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="delay in formal diagnosis of RA" />
+			<date key="time:timestamp" value="2020-06-25T00:00:00" />
+			<date key="start_timestamp" value="2020-06-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="misdiagnosed with tendonitis initially" />
+			<date key="time:timestamp" value="2020-06-25T00:00:00" />
+			<date key="start_timestamp" value="2020-06-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting family doctor for symptoms" />
+			<date key="time:timestamp" value="2020-06-25T00:00:00" />
+			<date key="start_timestamp" value="2020-06-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Methotrexate reducing joint inflammation" />
+			<date key="time:timestamp" value="2020-07-20T00:00:00" />
+			<date key="start_timestamp" value="2020-07-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="medications for managing RA symptoms:" />
+			<date key="time:timestamp" value="2020-07-20T00:00:00" />
+			<date key="start_timestamp" value="2020-07-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Prednisone managing severe flare-ups" />
+			<date key="time:timestamp" value="2020-08-05T00:00:00" />
+			<date key="start_timestamp" value="2020-08-05T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Hydroxychloroquine complementing other medications" />
+			<date key="time:timestamp" value="2020-09-10T00:00:00" />
+			<date key="start_timestamp" value="2020-09-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Hydroxychloroquine controlling RA symptoms" />
+			<date key="time:timestamp" value="2020-09-10T00:00:00" />
+			<date key="start_timestamp" value="2020-09-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting rheumatologist and occupational therapist" />
+			<date key="time:timestamp" value="2020-09-10T00:00:00" />
+			<date key="start_timestamp" value="2020-09-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="medications crucial in alleviating symptoms" />
+			<date key="time:timestamp" value="2020-09-10T00:00:00" />
+			<date key="start_timestamp" value="2020-09-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="effectiveness of Methotrexate and Prednisone" />
+			<date key="time:timestamp" value="2020-09-10T00:00:00" />
+			<date key="start_timestamp" value="2020-09-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="managing RA with combination of medications" />
+			<date key="time:timestamp" value="2020-09-10T00:00:00" />
+			<date key="start_timestamp" value="2020-09-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="diagnosed with Rheumatoid Arthritis by rheumatologist" />
+			<date key="time:timestamp" value="2021-07-15T00:00:00" />
+			<date key="start_timestamp" value="2021-07-15T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="49" />
+		<event>
+			<string key="concept:name" value="receiving confirmed diagnosis" />
+			<date key="time:timestamp" value="2020-06-08T00:00:00" />
+			<date key="start_timestamp" value="2020-06-08T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="symptoms progressively worsening" />
+			<date key="time:timestamp" value="2020-06-25T00:00:00" />
+			<date key="start_timestamp" value="2020-06-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="hampering work efficiency" />
+			<date key="time:timestamp" value="2020-06-25T00:00:00" />
+			<date key="start_timestamp" value="2020-06-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="starting to experience joint pain" />
+			<date key="time:timestamp" value="2020-06-25T00:00:00" />
+			<date key="start_timestamp" value="2020-06-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="experiencing NSAIDs side effects" />
+			<date key="time:timestamp" value="2020-08-06T00:00:00" />
+			<date key="start_timestamp" value="2020-08-06T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed NSAIDs for pain relief" />
+			<date key="time:timestamp" value="2020-08-06T00:00:00" />
+			<date key="start_timestamp" value="2020-08-06T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting with rheumatologist for monitoring" />
+			<date key="time:timestamp" value="2020-08-20T00:00:00" />
+			<date key="start_timestamp" value="2020-08-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="adjusting to DMARDs medication" />
+			<date key="time:timestamp" value="2020-08-20T00:00:00" />
+			<date key="start_timestamp" value="2020-08-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="introducing DMARDs for inflammation management" />
+			<date key="time:timestamp" value="2020-08-20T00:00:00" />
+			<date key="start_timestamp" value="2020-08-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="managing Rheumatoid Arthritis effectively" />
+			<date key="time:timestamp" value="2020-08-20T00:00:00" />
+			<date key="start_timestamp" value="2020-08-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="visiting primary care physician" />
+			<date key="time:timestamp" value="2020-10-07T00:00:00" />
+			<date key="start_timestamp" value="2020-10-07T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="improving quality of life" />
+			<date key="time:timestamp" value="2020-10-15T00:00:00" />
+			<date key="start_timestamp" value="2020-10-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="adding biologic DMARDs for immune system targeting" />
+			<date key="time:timestamp" value="2020-10-15T00:00:00" />
+			<date key="start_timestamp" value="2020-10-15T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="44" />
+		<event>
+			<string key="concept:name" value="seeking medical help for worsening symptoms" />
+			<date key="time:timestamp" value="2020-06-15T00:00:00" />
+			<date key="start_timestamp" value="2020-06-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="starting symptoms of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2020-06-15T00:00:00" />
+			<date key="start_timestamp" value="2020-06-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="referral to rheumatologist for diagnosis" />
+			<date key="time:timestamp" value="2020-06-15T00:00:00" />
+			<date key="start_timestamp" value="2020-06-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="challenges in diagnostic process" />
+			<date key="time:timestamp" value="2020-11-01T00:00:00" />
+			<date key="start_timestamp" value="2020-11-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="medications for managing Rheumatoid Arthritis symptoms" />
+			<date key="time:timestamp" value="2020-12-15T00:00:00" />
+			<date key="start_timestamp" value="2020-12-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="benefits of Methotrexate treatment" />
+			<date key="time:timestamp" value="2020-12-15T00:00:00" />
+			<date key="start_timestamp" value="2020-12-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="improvement with Methotrexate treatment" />
+			<date key="time:timestamp" value="2021-01-01T00:00:00" />
+			<date key="start_timestamp" value="2021-01-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="benefits of Hydroxychloroquine treatment" />
+			<date key="time:timestamp" value="2021-01-02T00:00:00" />
+			<date key="start_timestamp" value="2021-01-02T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="effectiveness of Prednisone in managing symptoms" />
+			<date key="time:timestamp" value="2021-01-02T00:00:00" />
+			<date key="start_timestamp" value="2021-01-02T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="benefits and side effects of Prednisone" />
+			<date key="time:timestamp" value="2021-02-01T00:00:00" />
+			<date key="start_timestamp" value="2021-02-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="importance of medication combination in managing responsibilities" />
+			<date key="time:timestamp" value="2021-04-01T00:00:00" />
+			<date key="start_timestamp" value="2021-04-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="improvement with combined medication treatment" />
+			<date key="time:timestamp" value="2021-04-01T00:00:00" />
+			<date key="start_timestamp" value="2021-04-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting with specialists for condition management" />
+			<date key="time:timestamp" value="2021-04-01T00:00:00" />
+			<date key="start_timestamp" value="2021-04-01T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="90" />
+		<event>
+			<string key="concept:name" value="initial symptoms of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2020-07-07T00:00:00" />
+			<date key="start_timestamp" value="2020-07-07T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting primary care physician" />
+			<date key="time:timestamp" value="2020-08-15T00:00:00" />
+			<date key="start_timestamp" value="2020-08-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="receiving official diagnosis of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2020-09-10T00:00:00" />
+			<date key="start_timestamp" value="2020-09-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed medications for Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2020-09-20T00:00:00" />
+			<date key="start_timestamp" value="2020-09-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Prednisone for inflammation and acute symptoms" />
+			<date key="time:timestamp" value="2020-09-20T00:00:00" />
+			<date key="start_timestamp" value="2020-09-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Methotrexate as disease-modifying antirheumatic drug" />
+			<date key="time:timestamp" value="2020-10-05T00:00:00" />
+			<date key="start_timestamp" value="2020-10-05T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Hydroxychloroquine to enhance effects of Methotrexate" />
+			<date key="time:timestamp" value="2020-11-10T00:00:00" />
+			<date key="start_timestamp" value="2020-11-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Etanercept as biologic DMARD for inflammation" />
+			<date key="time:timestamp" value="2020-12-25T00:00:00" />
+			<date key="start_timestamp" value="2020-12-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="regular consultations with rheumatologist for monitoring" />
+			<date key="time:timestamp" value="2020-12-25T00:00:00" />
+			<date key="start_timestamp" value="2020-12-25T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="83" />
+		<event>
+			<string key="concept:name" value="experiencing joint pain and stiffness" />
+			<date key="time:timestamp" value="2020-07-17T00:00:00" />
+			<date key="start_timestamp" value="2020-07-17T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="starting to experience symptoms" />
+			<date key="time:timestamp" value="2020-07-17T00:00:00" />
+			<date key="start_timestamp" value="2020-07-17T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting primary care physician" />
+			<date key="time:timestamp" value="2020-08-25T00:00:00" />
+			<date key="start_timestamp" value="2020-08-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="initiating treatment plan with NSAIDs" />
+			<date key="time:timestamp" value="2020-09-15T00:00:00" />
+			<date key="start_timestamp" value="2020-09-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="receiving diagnosis of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2020-10-10T00:00:00" />
+			<date key="start_timestamp" value="2020-10-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="adding DMARDs like Methotrexate" />
+			<date key="time:timestamp" value="2020-11-01T00:00:00" />
+			<date key="start_timestamp" value="2020-11-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="receiving significant pain reduction with Adalimumab" />
+			<date key="time:timestamp" value="2020-12-20T00:00:00" />
+			<date key="start_timestamp" value="2020-12-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="introducing biologic DMARDs like Adalimumab" />
+			<date key="time:timestamp" value="2020-12-20T00:00:00" />
+			<date key="start_timestamp" value="2020-12-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="managing Rheumatoid Arthritis effectively" />
+			<date key="time:timestamp" value="2020-12-20T00:00:00" />
+			<date key="start_timestamp" value="2020-12-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting healthcare professionals for support" />
+			<date key="time:timestamp" value="2020-12-20T00:00:00" />
+			<date key="start_timestamp" value="2020-12-20T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="46" />
+		<event>
+			<string key="concept:name" value="experiencing first symptoms of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2020-07-21T00:00:00" />
+			<date key="start_timestamp" value="2020-07-21T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="seeking medical help for diagnosis" />
+			<date key="time:timestamp" value="2020-07-21T00:00:00" />
+			<date key="start_timestamp" value="2020-07-21T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="medications for managing Rheumatoid Arthritis: Methotrexate" />
+			<date key="time:timestamp" value="2020-09-01T00:00:00" />
+			<date key="start_timestamp" value="2020-09-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="side effects of Methotrexate" />
+			<date key="time:timestamp" value="2020-09-01T00:00:00" />
+			<date key="start_timestamp" value="2020-09-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="side effects of Prednisone" />
+			<date key="time:timestamp" value="2020-09-01T00:00:00" />
+			<date key="start_timestamp" value="2020-09-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="medications for managing Rheumatoid Arthritis: Prednisone" />
+			<date key="time:timestamp" value="2020-09-01T00:00:00" />
+			<date key="start_timestamp" value="2020-09-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="official diagnosis of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2020-09-01T00:00:00" />
+			<date key="start_timestamp" value="2020-09-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="medications crucial for managing Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2021-01-01T00:00:00" />
+			<date key="start_timestamp" value="2021-01-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting with specialists for medication adjustments" />
+			<date key="time:timestamp" value="2021-01-01T00:00:00" />
+			<date key="start_timestamp" value="2021-01-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="medications for managing Rheumatoid Arthritis: Hydroxychloroquine" />
+			<date key="time:timestamp" value="2021-01-01T00:00:00" />
+			<date key="start_timestamp" value="2021-01-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="medications for managing Rheumatoid Arthritis: NSAIDs" />
+			<date key="time:timestamp" value="2021-01-01T00:00:00" />
+			<date key="start_timestamp" value="2021-01-01T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="68" />
+		<event>
+			<string key="concept:name" value="experiencing joint pain, swelling, stiffness" />
+			<date key="time:timestamp" value="2020-09-06T00:00:00" />
+			<date key="start_timestamp" value="2020-09-06T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting rheumatologist for diagnosis" />
+			<date key="time:timestamp" value="2021-01-01T00:00:00" />
+			<date key="start_timestamp" value="2021-01-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed Prednisone for acute flare-ups" />
+			<date key="time:timestamp" value="2021-01-01T00:00:00" />
+			<date key="start_timestamp" value="2021-01-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed Methotrexate for joint pain" />
+			<date key="time:timestamp" value="2021-01-01T00:00:00" />
+			<date key="start_timestamp" value="2021-01-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed Hydroxychloroquine for joint function" />
+			<date key="time:timestamp" value="2021-03-01T00:00:00" />
+			<date key="start_timestamp" value="2021-03-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting with specialists for treatment" />
+			<date key="time:timestamp" value="2021-03-01T00:00:00" />
+			<date key="start_timestamp" value="2021-03-01T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="43" />
+		<event>
+			<string key="concept:name" value="experiencing joint pain, stiffness, swelling" />
+			<date key="time:timestamp" value="2020-09-08T00:00:00" />
+			<date key="start_timestamp" value="2020-09-08T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="attributing symptoms to demanding job" />
+			<date key="time:timestamp" value="2020-09-08T00:00:00" />
+			<date key="start_timestamp" value="2020-09-08T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="presenting classic Rheumatoid Arthritis symptoms" />
+			<date key="time:timestamp" value="2021-02-01T00:00:00" />
+			<date key="start_timestamp" value="2021-02-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting rheumatologist after enduring pain" />
+			<date key="time:timestamp" value="2021-02-01T00:00:00" />
+			<date key="start_timestamp" value="2021-02-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed Methotrexate as first-line treatment" />
+			<date key="time:timestamp" value="2021-03-01T00:00:00" />
+			<date key="start_timestamp" value="2021-03-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="experiencing severe side effects with Methotrexate" />
+			<date key="time:timestamp" value="2021-03-01T00:00:00" />
+			<date key="start_timestamp" value="2021-03-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting rheumatologist for treatment adjustments" />
+			<date key="time:timestamp" value="2021-05-01T00:00:00" />
+			<date key="start_timestamp" value="2021-05-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="switching to Hydroxychloroquine in May 2021" />
+			<date key="time:timestamp" value="2021-05-01T00:00:00" />
+			<date key="start_timestamp" value="2021-05-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="medications improving quality of life" />
+			<date key="time:timestamp" value="2021-08-01T00:00:00" />
+			<date key="start_timestamp" value="2021-08-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="balancing symptom management and side effects" />
+			<date key="time:timestamp" value="2021-08-01T00:00:00" />
+			<date key="start_timestamp" value="2021-08-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="intensifying treatment with Sulfasalazine in August 2021" />
+			<date key="time:timestamp" value="2021-08-01T00:00:00" />
+			<date key="start_timestamp" value="2021-08-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="gradual process in achieving symptom control" />
+			<date key="time:timestamp" value="2021-08-01T00:00:00" />
+			<date key="start_timestamp" value="2021-08-01T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="74" />
+		<event>
+			<string key="concept:name" value="introducing Hydroxychloroquine to control progression" />
+			<date key="time:timestamp" value="2020-11-01T00:00:00" />
+			<date key="start_timestamp" value="2020-11-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="experiencing intensified pain and swelling" />
+			<date key="time:timestamp" value="2023-06-16T00:00:00" />
+			<date key="start_timestamp" value="2023-06-16T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="visiting primary care physician" />
+			<date key="time:timestamp" value="2023-06-16T00:00:00" />
+			<date key="start_timestamp" value="2023-06-16T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="waking up with joint pain" />
+			<date key="time:timestamp" value="2023-06-16T00:00:00" />
+			<date key="start_timestamp" value="2023-06-16T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="diagnosed with Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2023-09-05T00:00:00" />
+			<date key="start_timestamp" value="2023-09-05T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="starting Methotrexate treatment" />
+			<date key="time:timestamp" value="2023-09-10T00:00:00" />
+			<date key="start_timestamp" value="2023-09-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="adding Prednisone for acute flares" />
+			<date key="time:timestamp" value="2023-10-01T00:00:00" />
+			<date key="start_timestamp" value="2023-10-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting primary care physician, rheumatologist, pain management specialist" />
+			<date key="time:timestamp" value="2024-01-01T00:00:00" />
+			<date key="start_timestamp" value="2024-01-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="receiving Tocilizumab for insufficient relief" />
+			<date key="time:timestamp" value="2024-01-01T00:00:00" />
+			<date key="start_timestamp" value="2024-01-01T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="42" />
+		<event>
+			<string key="concept:name" value="confirmation of diagnosis through tests" />
+			<date key="time:timestamp" value="2020-11-30T00:00:00" />
+			<date key="start_timestamp" value="2020-11-30T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="starting treatment with NSAIDs" />
+			<date key="time:timestamp" value="2020-11-30T00:00:00" />
+			<date key="start_timestamp" value="2020-11-30T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="adding DMARDs to treatment plan" />
+			<date key="time:timestamp" value="2020-12-01T00:00:00" />
+			<date key="start_timestamp" value="2020-12-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="introducing biologic DMARD" />
+			<date key="time:timestamp" value="2021-02-01T00:00:00" />
+			<date key="start_timestamp" value="2021-02-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="role of healthcare professionals in treatment" />
+			<date key="time:timestamp" value="2021-02-01T00:00:00" />
+			<date key="start_timestamp" value="2021-02-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="experiencing initial symptoms of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2021-10-16T00:00:00" />
+			<date key="start_timestamp" value="2021-10-16T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="symptoms: joint pain, swelling, stiffness" />
+			<date key="time:timestamp" value="2021-10-16T00:00:00" />
+			<date key="start_timestamp" value="2021-10-16T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="ignoring symptoms due to work stress" />
+			<date key="time:timestamp" value="2021-10-16T00:00:00" />
+			<date key="start_timestamp" value="2021-10-16T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting primary care physician" />
+			<date key="time:timestamp" value="2021-10-16T00:00:00" />
+			<date key="start_timestamp" value="2021-10-16T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="85" />
+		<event>
+			<string key="concept:name" value="pain spreading to elbows and knees" />
+			<date key="time:timestamp" value="2020-12-11T00:00:00" />
+			<date key="start_timestamp" value="2020-12-11T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="balancing work and family life" />
+			<date key="time:timestamp" value="2020-12-11T00:00:00" />
+			<date key="start_timestamp" value="2020-12-11T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="starting to experience symptoms" />
+			<date key="time:timestamp" value="2020-12-11T00:00:00" />
+			<date key="start_timestamp" value="2020-12-11T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="initially mistaken for muscle strain" />
+			<date key="time:timestamp" value="2020-12-31T00:00:00" />
+			<date key="start_timestamp" value="2020-12-31T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="treatment plan involving medications" />
+			<date key="time:timestamp" value="2020-12-31T00:00:00" />
+			<date key="start_timestamp" value="2020-12-31T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed NSAIDs for pain relief" />
+			<date key="time:timestamp" value="2020-12-31T00:00:00" />
+			<date key="start_timestamp" value="2020-12-31T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="diagnosed with Rheumatoid Arthritis in January 2021" />
+			<date key="time:timestamp" value="2021-01-01T00:00:00" />
+			<date key="start_timestamp" value="2021-01-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="introduction of DMARDs in March 2021" />
+			<date key="time:timestamp" value="2021-03-01T00:00:00" />
+			<date key="start_timestamp" value="2021-03-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="improvement in joint pain with DMARDs" />
+			<date key="time:timestamp" value="2021-03-01T00:00:00" />
+			<date key="start_timestamp" value="2021-03-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="medication dosage adjustments crucial for management" />
+			<date key="time:timestamp" value="2021-03-01T00:00:00" />
+			<date key="start_timestamp" value="2021-03-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="positive impact of medications on quality of life" />
+			<date key="time:timestamp" value="2021-03-01T00:00:00" />
+			<date key="start_timestamp" value="2021-03-01T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="73" />
+		<event>
+			<string key="concept:name" value="noticing first symptoms of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2021-01-07T00:00:00" />
+			<date key="start_timestamp" value="2021-01-07T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting general practitioner for suspected diagnosis" />
+			<date key="time:timestamp" value="2021-02-01T00:00:00" />
+			<date key="start_timestamp" value="2021-02-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="confirming diagnosis through further tests" />
+			<date key="time:timestamp" value="2021-03-01T00:00:00" />
+			<date key="start_timestamp" value="2021-03-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="starting treatment with Methotrexate in April 2021" />
+			<date key="time:timestamp" value="2021-04-01T00:00:00" />
+			<date key="start_timestamp" value="2021-04-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="switching to Hydroxychloroquine due to side effects" />
+			<date key="time:timestamp" value="2021-06-01T00:00:00" />
+			<date key="start_timestamp" value="2021-06-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="collaborating closely with rheumatologist for treatment" />
+			<date key="time:timestamp" value="2021-06-01T00:00:00" />
+			<date key="start_timestamp" value="2021-06-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="introducing NSAIDs and Adalimumab for pain relief" />
+			<date key="time:timestamp" value="2021-06-01T00:00:00" />
+			<date key="start_timestamp" value="2021-06-01T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="79" />
+		<event>
+			<string key="concept:name" value="visiting general practitioner" />
+			<date key="time:timestamp" value="2021-01-28T00:00:00" />
+			<date key="start_timestamp" value="2021-01-28T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="starting to experience symptoms" />
+			<date key="time:timestamp" value="2021-01-28T00:00:00" />
+			<date key="start_timestamp" value="2021-01-28T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="being prescribed NSAIDs for pain management" />
+			<date key="time:timestamp" value="2021-02-15T00:00:00" />
+			<date key="start_timestamp" value="2021-02-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="seeking second opinion from rheumatologist" />
+			<date key="time:timestamp" value="2021-02-15T00:00:00" />
+			<date key="start_timestamp" value="2021-02-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="being diagnosed with Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2021-03-03T00:00:00" />
+			<date key="start_timestamp" value="2021-03-03T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="receiving support from healthcare team" />
+			<date key="time:timestamp" value="2021-03-22T00:00:00" />
+			<date key="start_timestamp" value="2021-03-22T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="introducing DMARDs like methotrexate" />
+			<date key="time:timestamp" value="2021-03-22T00:00:00" />
+			<date key="start_timestamp" value="2021-03-22T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="undergoing regular monitoring and medication adjustments" />
+			<date key="time:timestamp" value="2021-04-05T00:00:00" />
+			<date key="start_timestamp" value="2021-04-05T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="improving symptoms with methotrexate and adalimumab" />
+			<date key="time:timestamp" value="2021-04-05T00:00:00" />
+			<date key="start_timestamp" value="2021-04-05T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="augmenting treatment with biologic DMARDs" />
+			<date key="time:timestamp" value="2021-04-05T00:00:00" />
+			<date key="start_timestamp" value="2021-04-05T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="82" />
+		<event>
+			<string key="concept:name" value="attributing symptoms to stress and overwork" />
+			<date key="time:timestamp" value="2021-02-04T00:00:00" />
+			<date key="start_timestamp" value="2021-02-04T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="starting to experience symptoms" />
+			<date key="time:timestamp" value="2021-02-04T00:00:00" />
+			<date key="start_timestamp" value="2021-02-04T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="getting diagnosed with Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2021-05-25T00:00:00" />
+			<date key="start_timestamp" value="2021-05-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="receiving confirmed diagnosis of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2021-05-25T00:00:00" />
+			<date key="start_timestamp" value="2021-05-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="starting Prednisone medication" />
+			<date key="time:timestamp" value="2021-06-02T00:00:00" />
+			<date key="start_timestamp" value="2021-06-02T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="starting Methotrexate medication" />
+			<date key="time:timestamp" value="2021-06-02T00:00:00" />
+			<date key="start_timestamp" value="2021-06-02T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="balancing symptom management with potential side effects" />
+			<date key="time:timestamp" value="2021-06-02T00:00:00" />
+			<date key="start_timestamp" value="2021-06-02T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="adding Hydroxychloroquine to medication regimen" />
+			<date key="time:timestamp" value="2021-07-15T00:00:00" />
+			<date key="start_timestamp" value="2021-07-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="initiating Biologic Medication (Adalimumab)" />
+			<date key="time:timestamp" value="2021-09-10T00:00:00" />
+			<date key="start_timestamp" value="2021-09-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting with specialists for tailored medication regimen" />
+			<date key="time:timestamp" value="2021-09-10T00:00:00" />
+			<date key="start_timestamp" value="2021-09-10T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="80" />
+		<event>
+			<string key="concept:name" value="noticing initial symptoms of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2021-02-11T00:00:00" />
+			<date key="start_timestamp" value="2021-02-11T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="receiving diagnosis after series of tests" />
+			<date key="time:timestamp" value="2021-03-05T00:00:00" />
+			<date key="start_timestamp" value="2021-03-05T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed Methotrexate for inflammation control" />
+			<date key="time:timestamp" value="2021-03-05T00:00:00" />
+			<date key="start_timestamp" value="2021-03-05T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="experiencing reduced joint pain and swelling" />
+			<date key="time:timestamp" value="2021-03-05T00:00:00" />
+			<date key="start_timestamp" value="2021-03-05T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="taking Prednisone for short-term relief" />
+			<date key="time:timestamp" value="2021-03-05T00:00:00" />
+			<date key="start_timestamp" value="2021-03-05T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="adding Hydroxychloroquine to enhance effects" />
+			<date key="time:timestamp" value="2021-03-05T00:00:00" />
+			<date key="start_timestamp" value="2021-03-05T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="managing symptoms with prescribed medications effectively" />
+			<date key="time:timestamp" value="2021-03-05T00:00:00" />
+			<date key="start_timestamp" value="2021-03-05T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting various healthcare professionals for treatment" />
+			<date key="time:timestamp" value="2021-03-05T00:00:00" />
+			<date key="start_timestamp" value="2021-03-05T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="60" />
+		<event>
+			<string key="concept:name" value="noticing initial symptoms of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2021-02-23T00:00:00" />
+			<date key="start_timestamp" value="2021-02-23T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="visiting primary care physician" />
+			<date key="time:timestamp" value="2021-02-23T00:00:00" />
+			<date key="start_timestamp" value="2021-02-23T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="noticing improvements in joint pain" />
+			<date key="time:timestamp" value="2021-04-15T00:00:00" />
+			<date key="start_timestamp" value="2021-04-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed Methotrexate for disease progression" />
+			<date key="time:timestamp" value="2021-04-15T00:00:00" />
+			<date key="start_timestamp" value="2021-04-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="receiving confirmed diagnosis after ruling out" />
+			<date key="time:timestamp" value="2021-04-15T00:00:00" />
+			<date key="start_timestamp" value="2021-04-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed Prednisone for inflammation relief" />
+			<date key="time:timestamp" value="2021-04-25T00:00:00" />
+			<date key="start_timestamp" value="2021-04-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed Hydroxychloroquine for inflammation control" />
+			<date key="time:timestamp" value="2021-05-10T00:00:00" />
+			<date key="start_timestamp" value="2021-05-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed Sulfasalazine for long-term outcomes" />
+			<date key="time:timestamp" value="2021-06-20T00:00:00" />
+			<date key="start_timestamp" value="2021-06-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting rheumatologist for dosage adjustments" />
+			<date key="time:timestamp" value="2021-06-20T00:00:00" />
+			<date key="start_timestamp" value="2021-06-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="improved quality of life with medications" />
+			<date key="time:timestamp" value="2021-06-20T00:00:00" />
+			<date key="start_timestamp" value="2021-06-20T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="52" />
+		<event>
+			<string key="concept:name" value="starting symptoms of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2021-04-02T00:00:00" />
+			<date key="start_timestamp" value="2021-04-02T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="symptoms affecting daily activities" />
+			<date key="time:timestamp" value="2021-04-02T00:00:00" />
+			<date key="start_timestamp" value="2021-04-02T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting rheumatologist for diagnosis" />
+			<date key="time:timestamp" value="2021-08-15T00:00:00" />
+			<date key="start_timestamp" value="2021-08-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="medications for controlling disease progression" />
+			<date key="time:timestamp" value="2021-08-20T00:00:00" />
+			<date key="start_timestamp" value="2021-08-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="medications for managing Rheumatoid Arthritis symptoms" />
+			<date key="time:timestamp" value="2021-08-20T00:00:00" />
+			<date key="start_timestamp" value="2021-08-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="medications for short-term relief during flare-ups" />
+			<date key="time:timestamp" value="2021-09-05T00:00:00" />
+			<date key="start_timestamp" value="2021-09-05T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="medications crucial in alleviating symptoms" />
+			<date key="time:timestamp" value="2021-10-10T00:00:00" />
+			<date key="start_timestamp" value="2021-10-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting healthcare professionals for management" />
+			<date key="time:timestamp" value="2021-11-25T00:00:00" />
+			<date key="start_timestamp" value="2021-11-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="starting biologic agent for relief" />
+			<date key="time:timestamp" value="2021-11-25T00:00:00" />
+			<date key="start_timestamp" value="2021-11-25T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="75" />
+		<event>
+			<string key="concept:name" value="starting treatment journey with multiple medications" />
+			<date key="time:timestamp" value="2021-06-01T00:00:00" />
+			<date key="start_timestamp" value="2021-06-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="adjusting dosages and exploring options" />
+			<date key="time:timestamp" value="2021-06-01T00:00:00" />
+			<date key="start_timestamp" value="2021-06-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="receiving confirmed diagnosis of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2021-06-15T00:00:00" />
+			<date key="start_timestamp" value="2021-06-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="introducing biologics for better symptom management" />
+			<date key="time:timestamp" value="2021-09-01T00:00:00" />
+			<date key="start_timestamp" value="2021-09-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="improving quality of life with medications" />
+			<date key="time:timestamp" value="2021-09-01T00:00:00" />
+			<date key="start_timestamp" value="2021-09-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="symptoms persisting and worsening" />
+			<date key="time:timestamp" value="2023-04-29T00:00:00" />
+			<date key="start_timestamp" value="2023-04-29T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="experiencing joint pain and stiffness" />
+			<date key="time:timestamp" value="2023-04-29T00:00:00" />
+			<date key="start_timestamp" value="2023-04-29T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="visiting general practitioner" />
+			<date key="time:timestamp" value="2023-04-29T00:00:00" />
+			<date key="start_timestamp" value="2023-04-29T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="71" />
+		<event>
+			<string key="concept:name" value="attributing symptoms to overworking" />
+			<date key="time:timestamp" value="2021-06-11T00:00:00" />
+			<date key="start_timestamp" value="2021-06-11T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="experiencing symptoms of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2021-06-11T00:00:00" />
+			<date key="start_timestamp" value="2021-06-11T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="seeking medical help" />
+			<date key="time:timestamp" value="2021-07-01T00:00:00" />
+			<date key="start_timestamp" value="2021-07-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="referral to rheumatologist" />
+			<date key="time:timestamp" value="2021-07-01T00:00:00" />
+			<date key="start_timestamp" value="2021-07-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="receiving confirmed diagnosis of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2021-08-15T00:00:00" />
+			<date key="start_timestamp" value="2021-08-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescription of Methotrexate" />
+			<date key="time:timestamp" value="2021-08-20T00:00:00" />
+			<date key="start_timestamp" value="2021-08-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescription of Prednisone" />
+			<date key="time:timestamp" value="2021-08-20T00:00:00" />
+			<date key="start_timestamp" value="2021-08-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescription of Hydroxychloroquine" />
+			<date key="time:timestamp" value="2021-09-10T00:00:00" />
+			<date key="start_timestamp" value="2021-09-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting with rheumatologist regularly" />
+			<date key="time:timestamp" value="2021-10-05T00:00:00" />
+			<date key="start_timestamp" value="2021-10-05T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="managing symptoms with medications and support" />
+			<date key="time:timestamp" value="2021-10-05T00:00:00" />
+			<date key="start_timestamp" value="2021-10-05T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescription of Adalimumab (Humira)" />
+			<date key="time:timestamp" value="2021-10-05T00:00:00" />
+			<date key="start_timestamp" value="2021-10-05T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="72" />
+		<event>
+			<string key="concept:name" value="experiencing joint pain, stiffness, swelling" />
+			<date key="time:timestamp" value="2021-08-06T00:00:00" />
+			<date key="start_timestamp" value="2021-08-06T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="referral to rheumatologist" />
+			<date key="time:timestamp" value="2021-08-06T00:00:00" />
+			<date key="start_timestamp" value="2021-08-06T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="confirmation of Rheumatoid Arthritis diagnosis" />
+			<date key="time:timestamp" value="2021-09-20T00:00:00" />
+			<date key="start_timestamp" value="2021-09-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Methotrexate as first-line treatment" />
+			<date key="time:timestamp" value="2021-09-25T00:00:00" />
+			<date key="start_timestamp" value="2021-09-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="treatment plan with medications" />
+			<date key="time:timestamp" value="2021-09-25T00:00:00" />
+			<date key="start_timestamp" value="2021-09-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Prednisone for severe flares" />
+			<date key="time:timestamp" value="2021-10-10T00:00:00" />
+			<date key="start_timestamp" value="2021-10-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Hydroxychloroquine to enhance effectiveness" />
+			<date key="time:timestamp" value="2021-12-05T00:00:00" />
+			<date key="start_timestamp" value="2021-12-05T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Adalimumab introduced after limited efficacy" />
+			<date key="time:timestamp" value="2022-02-15T00:00:00" />
+			<date key="start_timestamp" value="2022-02-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consultation with various specialists" />
+			<date key="time:timestamp" value="2022-02-15T00:00:00" />
+			<date key="start_timestamp" value="2022-02-15T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="76" />
+		<event>
+			<string key="concept:name" value="experiencing joint pain and stiffness" />
+			<date key="time:timestamp" value="2021-11-25T00:00:00" />
+			<date key="start_timestamp" value="2021-11-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="undergoing blood tests and physical examination" />
+			<date key="time:timestamp" value="2021-12-01T00:00:00" />
+			<date key="start_timestamp" value="2021-12-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="challenges with side effects of Prednisone" />
+			<date key="time:timestamp" value="2021-12-15T00:00:00" />
+			<date key="start_timestamp" value="2021-12-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="impact on professional and personal life" />
+			<date key="time:timestamp" value="2021-12-15T00:00:00" />
+			<date key="start_timestamp" value="2021-12-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="improvement in symptoms with medications" />
+			<date key="time:timestamp" value="2021-12-15T00:00:00" />
+			<date key="start_timestamp" value="2021-12-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting rheumatologist for specialized care" />
+			<date key="time:timestamp" value="2021-12-15T00:00:00" />
+			<date key="start_timestamp" value="2021-12-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed medications for managing symptoms" />
+			<date key="time:timestamp" value="2021-12-15T00:00:00" />
+			<date key="start_timestamp" value="2021-12-15T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="67" />
+		<event>
+			<string key="concept:name" value="consulting primary care physician, referred to rheumatologist" />
+			<date key="time:timestamp" value="2021-12-01T00:00:00" />
+			<date key="start_timestamp" value="2021-12-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="pain becoming debilitating, affecting daily activities" />
+			<date key="time:timestamp" value="2022-11-13T00:00:00" />
+			<date key="start_timestamp" value="2022-11-13T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="attributing symptoms to demanding job" />
+			<date key="time:timestamp" value="2022-11-13T00:00:00" />
+			<date key="start_timestamp" value="2022-11-13T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="experiencing joint pain, stiffness, swelling" />
+			<date key="time:timestamp" value="2022-11-13T00:00:00" />
+			<date key="start_timestamp" value="2022-11-13T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="medications managing symptoms, improving quality of life" />
+			<date key="time:timestamp" value="2023-01-01T00:00:00" />
+			<date key="start_timestamp" value="2023-01-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="starting Methotrexate in January 2023" />
+			<date key="time:timestamp" value="2023-01-01T00:00:00" />
+			<date key="start_timestamp" value="2023-01-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="diagnosis process ruling out other conditions" />
+			<date key="time:timestamp" value="2023-01-15T00:00:00" />
+			<date key="start_timestamp" value="2023-01-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed Prednisone for severe flare-ups in February 2023" />
+			<date key="time:timestamp" value="2023-02-01T00:00:00" />
+			<date key="start_timestamp" value="2023-02-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting rheumatologist, physiotherapist, psychologist for support" />
+			<date key="time:timestamp" value="2023-03-01T00:00:00" />
+			<date key="start_timestamp" value="2023-03-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="introducing Hydroxychloroquine in March 2023" />
+			<date key="time:timestamp" value="2023-03-01T00:00:00" />
+			<date key="start_timestamp" value="2023-03-01T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="45" />
+		<event>
+			<string key="concept:name" value="consulting rheumatologist regularly" />
+			<date key="time:timestamp" value="2022-02-02T00:00:00" />
+			<date key="start_timestamp" value="2022-02-02T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Hydroxychloroquine introduced for inflammation control" />
+			<date key="time:timestamp" value="2022-02-02T00:00:00" />
+			<date key="start_timestamp" value="2022-02-02T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Prednisone for short-term relief" />
+			<date key="time:timestamp" value="2022-02-02T00:00:00" />
+			<date key="start_timestamp" value="2022-02-02T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="improvement in pain and swelling" />
+			<date key="time:timestamp" value="2022-02-02T00:00:00" />
+			<date key="start_timestamp" value="2022-02-02T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Methotrexate prescribed for inflammation reduction" />
+			<date key="time:timestamp" value="2022-02-02T00:00:00" />
+			<date key="start_timestamp" value="2022-02-02T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="formulation of treatment plan" />
+			<date key="time:timestamp" value="2022-02-02T00:00:00" />
+			<date key="start_timestamp" value="2022-02-02T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="improved quality of life with treatment" />
+			<date key="time:timestamp" value="2022-02-02T00:00:00" />
+			<date key="start_timestamp" value="2022-02-02T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="experiencing joint pain, stiffness, swelling" />
+			<date key="time:timestamp" value="2022-10-12T00:00:00" />
+			<date key="start_timestamp" value="2022-10-12T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="symptoms affecting work and childcare" />
+			<date key="time:timestamp" value="2022-10-12T00:00:00" />
+			<date key="start_timestamp" value="2022-10-12T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="seeking medical help" />
+			<date key="time:timestamp" value="2022-10-12T00:00:00" />
+			<date key="start_timestamp" value="2022-10-12T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="visiting primary care physician" />
+			<date key="time:timestamp" value="2022-11-05T00:00:00" />
+			<date key="start_timestamp" value="2022-11-05T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="referral to rheumatologist" />
+			<date key="time:timestamp" value="2022-12-02T00:00:00" />
+			<date key="start_timestamp" value="2022-12-02T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="diagnosed with Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2023-01-20T00:00:00" />
+			<date key="start_timestamp" value="2023-01-20T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="70" />
+		<event>
+			<string key="concept:name" value="transitioning to DMARDs like methotrexate" />
+			<date key="time:timestamp" value="2022-02-12T00:00:00" />
+			<date key="start_timestamp" value="2022-02-12T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="improving quality of life with treatment" />
+			<date key="time:timestamp" value="2022-02-12T00:00:00" />
+			<date key="start_timestamp" value="2022-02-12T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="starting to experience joint pain and swelling" />
+			<date key="time:timestamp" value="2022-02-12T00:00:00" />
+			<date key="start_timestamp" value="2022-02-12T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting primary care physician" />
+			<date key="time:timestamp" value="2022-02-12T00:00:00" />
+			<date key="start_timestamp" value="2022-02-12T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting multidisciplinary healthcare team" />
+			<date key="time:timestamp" value="2022-02-12T00:00:00" />
+			<date key="start_timestamp" value="2022-02-12T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="receiving biologic agent adalimumab" />
+			<date key="time:timestamp" value="2022-02-12T00:00:00" />
+			<date key="start_timestamp" value="2022-02-12T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="starting treatment with NSAIDs and corticosteroids" />
+			<date key="time:timestamp" value="2022-02-12T00:00:00" />
+			<date key="start_timestamp" value="2022-02-12T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="experiencing side effects of methotrexate" />
+			<date key="time:timestamp" value="2022-02-12T00:00:00" />
+			<date key="start_timestamp" value="2022-02-12T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting rheumatologist" />
+			<date key="time:timestamp" value="2022-03-15T00:00:00" />
+			<date key="start_timestamp" value="2022-03-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="being diagnosed with Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2022-03-15T00:00:00" />
+			<date key="start_timestamp" value="2022-03-15T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="84" />
+		<event>
+			<string key="concept:name" value="starting to experience joint pain" />
+			<date key="time:timestamp" value="2022-03-01T00:00:00" />
+			<date key="start_timestamp" value="2022-03-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting rheumatologist for suspected diagnosis" />
+			<date key="time:timestamp" value="2022-03-15T00:00:00" />
+			<date key="start_timestamp" value="2022-03-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="confirming diagnosis after initial misdiagnoses" />
+			<date key="time:timestamp" value="2022-03-27T00:00:00" />
+			<date key="start_timestamp" value="2022-03-27T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="- Methotrexate: effective but caused nausea and fatigue" />
+			<date key="time:timestamp" value="2022-04-05T00:00:00" />
+			<date key="start_timestamp" value="2022-04-05T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="- Prednisone: quick relief but led to weight gain and mood swings" />
+			<date key="time:timestamp" value="2022-05-07T00:00:00" />
+			<date key="start_timestamp" value="2022-05-07T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="- Hydroxychloroquine: slow results but helped manage stiffness" />
+			<date key="time:timestamp" value="2022-07-15T00:00:00" />
+			<date key="start_timestamp" value="2022-07-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting with rheumatologist, physiotherapist, and nutritionist" />
+			<date key="time:timestamp" value="2022-07-15T00:00:00" />
+			<date key="start_timestamp" value="2022-07-15T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="88" />
+		<event>
+			<string key="concept:name" value="delaying seeking medical help" />
+			<date key="time:timestamp" value="2022-03-23T00:00:00" />
+			<date key="start_timestamp" value="2022-03-23T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting primary care physician" />
+			<date key="time:timestamp" value="2022-03-23T00:00:00" />
+			<date key="start_timestamp" value="2022-03-23T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="noticing stiffness and swelling in joints" />
+			<date key="time:timestamp" value="2022-03-23T00:00:00" />
+			<date key="start_timestamp" value="2022-03-23T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="seeing rheumatologist for diagnosis" />
+			<date key="time:timestamp" value="2022-04-15T00:00:00" />
+			<date key="start_timestamp" value="2022-04-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="receiving diagnosis of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2022-04-15T00:00:00" />
+			<date key="start_timestamp" value="2022-04-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed Methotrexate for joint inflammation" />
+			<date key="time:timestamp" value="2022-04-18T00:00:00" />
+			<date key="start_timestamp" value="2022-04-18T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="collaborative efforts of healthcare professionals" />
+			<date key="time:timestamp" value="2022-04-23T00:00:00" />
+			<date key="start_timestamp" value="2022-04-23T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="medications crucial in alleviating symptoms" />
+			<date key="time:timestamp" value="2022-04-23T00:00:00" />
+			<date key="start_timestamp" value="2022-04-23T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Prednisone provides immediate but temporary relief" />
+			<date key="time:timestamp" value="2022-04-23T00:00:00" />
+			<date key="start_timestamp" value="2022-04-23T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed Prednisone for acute flare-ups" />
+			<date key="time:timestamp" value="2022-04-23T00:00:00" />
+			<date key="start_timestamp" value="2022-04-23T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Hydroxychloroquine complements treatment by reducing inflammation" />
+			<date key="time:timestamp" value="2022-05-05T00:00:00" />
+			<date key="start_timestamp" value="2022-05-05T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed Hydroxychloroquine for targeting immune system" />
+			<date key="time:timestamp" value="2022-05-05T00:00:00" />
+			<date key="start_timestamp" value="2022-05-05T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Methotrexate most effective in managing symptoms" />
+			<date key="time:timestamp" value="2022-05-05T00:00:00" />
+			<date key="start_timestamp" value="2022-05-05T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="78" />
+		<event>
+			<string key="concept:name" value="symptoms affecting daily activities" />
+			<date key="time:timestamp" value="2022-04-06T00:00:00" />
+			<date key="start_timestamp" value="2022-04-06T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting primary care physician" />
+			<date key="time:timestamp" value="2022-04-06T00:00:00" />
+			<date key="start_timestamp" value="2022-04-06T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="experiencing joint pain and stiffness" />
+			<date key="time:timestamp" value="2022-04-06T00:00:00" />
+			<date key="start_timestamp" value="2022-04-06T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="starting Hydroxychloroquine as DMARD" />
+			<date key="time:timestamp" value="2022-05-07T00:00:00" />
+			<date key="start_timestamp" value="2022-05-07T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed Prednisone for inflammation relief" />
+			<date key="time:timestamp" value="2022-05-07T00:00:00" />
+			<date key="start_timestamp" value="2022-05-07T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="diagnosed with Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2022-05-07T00:00:00" />
+			<date key="start_timestamp" value="2022-05-07T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="adding Methotrexate for aggressive management" />
+			<date key="time:timestamp" value="2022-06-08T00:00:00" />
+			<date key="start_timestamp" value="2022-06-08T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed Folic Acid to reduce side effects" />
+			<date key="time:timestamp" value="2022-06-08T00:00:00" />
+			<date key="start_timestamp" value="2022-06-08T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="recommending Physical Therapy for joint mobility" />
+			<date key="time:timestamp" value="2022-08-09T00:00:00" />
+			<date key="start_timestamp" value="2022-08-09T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="regular follow-ups with Rheumatologist" />
+			<date key="time:timestamp" value="2022-08-09T00:00:00" />
+			<date key="start_timestamp" value="2022-08-09T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="combining Sulfasalazine with Methotrexate" />
+			<date key="time:timestamp" value="2022-08-09T00:00:00" />
+			<date key="start_timestamp" value="2022-08-09T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="57" />
+		<event>
+			<string key="concept:name" value="experiencing symptoms of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2022-04-29T00:00:00" />
+			<date key="start_timestamp" value="2022-04-29T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="progression of symptoms impacting work" />
+			<date key="time:timestamp" value="2022-04-29T00:00:00" />
+			<date key="start_timestamp" value="2022-04-29T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting primary care physician" />
+			<date key="time:timestamp" value="2022-04-29T00:00:00" />
+			<date key="start_timestamp" value="2022-04-29T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="receiving confirmed diagnosis of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2022-06-15T00:00:00" />
+			<date key="start_timestamp" value="2022-06-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="challenging diagnostic journey with misdiagnoses" />
+			<date key="time:timestamp" value="2022-06-15T00:00:00" />
+			<date key="start_timestamp" value="2022-06-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="side effects of Methotrexate" />
+			<date key="time:timestamp" value="2022-06-20T00:00:00" />
+			<date key="start_timestamp" value="2022-06-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescription of Methotrexate for joint inflammation" />
+			<date key="time:timestamp" value="2022-06-20T00:00:00" />
+			<date key="start_timestamp" value="2022-06-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescription of Prednisone for severe inflammation" />
+			<date key="time:timestamp" value="2022-06-25T00:00:00" />
+			<date key="start_timestamp" value="2022-06-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="addition of Hydroxychloroquine to control inflammation" />
+			<date key="time:timestamp" value="2022-07-10T00:00:00" />
+			<date key="start_timestamp" value="2022-07-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="monitoring medication effectiveness and adjusting dosages" />
+			<date key="time:timestamp" value="2022-10-07T00:00:00" />
+			<date key="start_timestamp" value="2022-10-07T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="55" />
+		<event>
+			<string key="concept:name" value="experiencing initial Rheumatoid Arthritis symptoms" />
+			<date key="time:timestamp" value="2022-05-10T00:00:00" />
+			<date key="start_timestamp" value="2022-05-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="attributing symptoms to work schedule" />
+			<date key="time:timestamp" value="2022-05-10T00:00:00" />
+			<date key="start_timestamp" value="2022-05-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="seeking medical advice for worsening symptoms" />
+			<date key="time:timestamp" value="2022-06-01T00:00:00" />
+			<date key="start_timestamp" value="2022-06-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="being referred to rheumatologist for evaluation" />
+			<date key="time:timestamp" value="2022-06-01T00:00:00" />
+			<date key="start_timestamp" value="2022-06-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="receiving correct diagnosis after challenging process" />
+			<date key="time:timestamp" value="2022-07-15T00:00:00" />
+			<date key="start_timestamp" value="2022-07-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="using Prednisone for acute flare-ups with side effects" />
+			<date key="time:timestamp" value="2022-07-20T00:00:00" />
+			<date key="start_timestamp" value="2022-07-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="starting Methotrexate medication for inflammation and pain" />
+			<date key="time:timestamp" value="2022-07-20T00:00:00" />
+			<date key="start_timestamp" value="2022-07-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="balancing work, childcare, and managing Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2022-08-10T00:00:00" />
+			<date key="start_timestamp" value="2022-08-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="adding Hydroxychloroquine to slow disease progression" />
+			<date key="time:timestamp" value="2022-08-10T00:00:00" />
+			<date key="start_timestamp" value="2022-08-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting rheumatologist regularly for medication effectiveness" />
+			<date key="time:timestamp" value="2022-08-10T00:00:00" />
+			<date key="start_timestamp" value="2022-08-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="experiencing occasional side effects from medications" />
+			<date key="time:timestamp" value="2022-08-10T00:00:00" />
+			<date key="start_timestamp" value="2022-08-10T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="53" />
+		<event>
+			<string key="concept:name" value="experiencing joint pain in hands and feet" />
+			<date key="time:timestamp" value="2022-06-23T00:00:00" />
+			<date key="start_timestamp" value="2022-06-23T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="escalating discomfort affecting mobility" />
+			<date key="time:timestamp" value="2022-06-23T00:00:00" />
+			<date key="start_timestamp" value="2022-06-23T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting rheumatologist for diagnosis" />
+			<date key="time:timestamp" value="2022-07-05T00:00:00" />
+			<date key="start_timestamp" value="2022-07-05T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed Prednisone for inflammation and pain" />
+			<date key="time:timestamp" value="2022-07-20T00:00:00" />
+			<date key="start_timestamp" value="2022-07-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="delay in receiving correct diagnosis" />
+			<date key="time:timestamp" value="2022-07-20T00:00:00" />
+			<date key="start_timestamp" value="2022-07-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Prednisone providing quick relief with side effects" />
+			<date key="time:timestamp" value="2022-07-20T00:00:00" />
+			<date key="start_timestamp" value="2022-07-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Methotrexate showing improvement after weeks" />
+			<date key="time:timestamp" value="2022-08-02T00:00:00" />
+			<date key="start_timestamp" value="2022-08-02T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="introducing Methotrexate to slow joint damage" />
+			<date key="time:timestamp" value="2022-08-02T00:00:00" />
+			<date key="start_timestamp" value="2022-08-02T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="adding Hydroxychloroquine to enhance Methotrexate" />
+			<date key="time:timestamp" value="2022-09-01T00:00:00" />
+			<date key="start_timestamp" value="2022-09-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Hydroxychloroquine reducing inflammation and pain" />
+			<date key="time:timestamp" value="2022-09-01T00:00:00" />
+			<date key="start_timestamp" value="2022-09-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribing Adalimumab when Methotrexate insufficient" />
+			<date key="time:timestamp" value="2022-10-10T00:00:00" />
+			<date key="start_timestamp" value="2022-10-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Adalimumab improving quality of life significantly" />
+			<date key="time:timestamp" value="2022-10-10T00:00:00" />
+			<date key="start_timestamp" value="2022-10-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting rheumatologist, orthopedic specialist, physiotherapist" />
+			<date key="time:timestamp" value="2022-10-10T00:00:00" />
+			<date key="start_timestamp" value="2022-10-10T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="59" />
+		<event>
+			<string key="concept:name" value="experiencing initial Rheumatoid Arthritis symptoms" />
+			<date key="time:timestamp" value="2022-06-27T00:00:00" />
+			<date key="start_timestamp" value="2022-06-27T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="impacting work productivity and quality of life" />
+			<date key="time:timestamp" value="2022-06-27T00:00:00" />
+			<date key="start_timestamp" value="2022-06-27T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="challenging process of getting diagnosed" />
+			<date key="time:timestamp" value="2022-06-27T00:00:00" />
+			<date key="start_timestamp" value="2022-06-27T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed Methotrexate for joint inflammation" />
+			<date key="time:timestamp" value="2022-08-15T00:00:00" />
+			<date key="start_timestamp" value="2022-08-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="being diagnosed with Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2022-08-15T00:00:00" />
+			<date key="start_timestamp" value="2022-08-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed Prednisone for quick relief" />
+			<date key="time:timestamp" value="2022-09-01T00:00:00" />
+			<date key="start_timestamp" value="2022-09-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed Hydroxychloroquine for symptom management" />
+			<date key="time:timestamp" value="2022-10-15T00:00:00" />
+			<date key="start_timestamp" value="2022-10-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="starting Biologic medications for underlying cause" />
+			<date key="time:timestamp" value="2022-12-01T00:00:00" />
+			<date key="start_timestamp" value="2022-12-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting healthcare professionals for guidance" />
+			<date key="time:timestamp" value="2022-12-01T00:00:00" />
+			<date key="start_timestamp" value="2022-12-01T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="47" />
+		<event>
+			<string key="concept:name" value="experiencing initial symptoms" />
+			<date key="time:timestamp" value="2022-07-25T00:00:00" />
+			<date key="start_timestamp" value="2022-07-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="pain affecting daily tasks" />
+			<date key="time:timestamp" value="2022-07-25T00:00:00" />
+			<date key="start_timestamp" value="2022-07-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting primary care physician" />
+			<date key="time:timestamp" value="2022-07-25T00:00:00" />
+			<date key="start_timestamp" value="2022-07-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="reducing joint swelling and pain" />
+			<date key="time:timestamp" value="2022-08-01T00:00:00" />
+			<date key="start_timestamp" value="2022-08-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="starting Methotrexate for inflammation" />
+			<date key="time:timestamp" value="2022-08-01T00:00:00" />
+			<date key="start_timestamp" value="2022-08-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="taking Prednisone for acute relief" />
+			<date key="time:timestamp" value="2022-09-01T00:00:00" />
+			<date key="start_timestamp" value="2022-09-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="medications improving quality of life" />
+			<date key="time:timestamp" value="2022-10-01T00:00:00" />
+			<date key="start_timestamp" value="2022-10-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting rheumatologist for specialized care" />
+			<date key="time:timestamp" value="2022-10-01T00:00:00" />
+			<date key="start_timestamp" value="2022-10-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="adding Hydroxychloroquine for joint function" />
+			<date key="time:timestamp" value="2022-10-01T00:00:00" />
+			<date key="start_timestamp" value="2022-10-01T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="66" />
+		<event>
+			<string key="concept:name" value="experiencing joint pain and swelling" />
+			<date key="time:timestamp" value="2022-09-14T00:00:00" />
+			<date key="start_timestamp" value="2022-09-14T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="intensifying pain over a month" />
+			<date key="time:timestamp" value="2022-09-14T00:00:00" />
+			<date key="start_timestamp" value="2022-09-14T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="balancing work and family life" />
+			<date key="time:timestamp" value="2022-09-14T00:00:00" />
+			<date key="start_timestamp" value="2022-09-14T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="beginning treatment regimen for Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2022-10-25T00:00:00" />
+			<date key="start_timestamp" value="2022-10-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="taking Methotrexate weekly for symptom improvement" />
+			<date key="time:timestamp" value="2022-10-25T00:00:00" />
+			<date key="start_timestamp" value="2022-10-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="no misdiagnoses or delays" />
+			<date key="time:timestamp" value="2022-10-25T00:00:00" />
+			<date key="start_timestamp" value="2022-10-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="managing acute symptoms with Prednisone" />
+			<date key="time:timestamp" value="2022-10-25T00:00:00" />
+			<date key="start_timestamp" value="2022-10-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed Methotrexate for inflammation reduction" />
+			<date key="time:timestamp" value="2022-10-25T00:00:00" />
+			<date key="start_timestamp" value="2022-10-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="receiving definitive diagnosis of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2022-10-25T00:00:00" />
+			<date key="start_timestamp" value="2022-10-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed Prednisone for quick relief during flare-ups" />
+			<date key="time:timestamp" value="2022-10-25T00:00:00" />
+			<date key="start_timestamp" value="2022-10-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="determined to lead fulfilling life with Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2022-12-15T00:00:00" />
+			<date key="start_timestamp" value="2022-12-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="managing symptoms effectively with medication adjustments" />
+			<date key="time:timestamp" value="2022-12-15T00:00:00" />
+			<date key="start_timestamp" value="2022-12-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting rheumatologist for monitoring and dosage adjustments" />
+			<date key="time:timestamp" value="2022-12-15T00:00:00" />
+			<date key="start_timestamp" value="2022-12-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="combining Hydroxychloroquine with Methotrexate for effectiveness" />
+			<date key="time:timestamp" value="2022-12-15T00:00:00" />
+			<date key="start_timestamp" value="2022-12-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="adding Hydroxychloroquine to treatment plan" />
+			<date key="time:timestamp" value="2022-12-15T00:00:00" />
+			<date key="start_timestamp" value="2022-12-15T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="64" />
+		<event>
+			<string key="concept:name" value="slow diagnosis process" />
+			<date key="time:timestamp" value="2023-01-04T00:00:00" />
+			<date key="start_timestamp" value="2023-01-04T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="starting to experience symptoms" />
+			<date key="time:timestamp" value="2023-01-25T00:00:00" />
+			<date key="start_timestamp" value="2023-01-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="experiencing joint pain and swelling" />
+			<date key="time:timestamp" value="2023-01-25T00:00:00" />
+			<date key="start_timestamp" value="2023-01-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="being referred to rheumatologist" />
+			<date key="time:timestamp" value="2023-03-25T00:00:00" />
+			<date key="start_timestamp" value="2023-03-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting primary care physician" />
+			<date key="time:timestamp" value="2023-03-25T00:00:00" />
+			<date key="start_timestamp" value="2023-03-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="impacting productivity and family life" />
+			<date key="time:timestamp" value="2023-03-25T00:00:00" />
+			<date key="start_timestamp" value="2023-03-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed Methotrexate for joint inflammation" />
+			<date key="time:timestamp" value="2023-04-12T00:00:00" />
+			<date key="start_timestamp" value="2023-04-12T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="experiencing side effects from Prednisone" />
+			<date key="time:timestamp" value="2023-04-26T00:00:00" />
+			<date key="start_timestamp" value="2023-04-26T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed Prednisone for inflammation relief" />
+			<date key="time:timestamp" value="2023-04-26T00:00:00" />
+			<date key="start_timestamp" value="2023-04-26T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="noticing improvement after medication" />
+			<date key="time:timestamp" value="2023-05-12T00:00:00" />
+			<date key="start_timestamp" value="2023-05-12T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed Hydroxychloroquine for disease control" />
+			<date key="time:timestamp" value="2023-05-15T00:00:00" />
+			<date key="start_timestamp" value="2023-05-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="balancing work, family, and medication side effects" />
+			<date key="time:timestamp" value="2023-07-15T00:00:00" />
+			<date key="start_timestamp" value="2023-07-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="seeing benefits after Hydroxychloroquine treatment" />
+			<date key="time:timestamp" value="2023-07-15T00:00:00" />
+			<date key="start_timestamp" value="2023-07-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="regular consultations with rheumatologist for adjustments" />
+			<date key="time:timestamp" value="2023-07-15T00:00:00" />
+			<date key="start_timestamp" value="2023-07-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="finding support from healthcare team and family" />
+			<date key="time:timestamp" value="2023-07-15T00:00:00" />
+			<date key="start_timestamp" value="2023-07-15T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="51" />
+		<event>
+			<string key="concept:name" value="managing Rheumatoid Arthritis symptoms effectively with medications" />
+			<date key="time:timestamp" value="2023-05-11T00:00:00" />
+			<date key="start_timestamp" value="2023-05-11T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="noticing initial symptoms of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2023-08-20T00:00:00" />
+			<date key="start_timestamp" value="2023-08-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="experiencing pain affecting work and childcare" />
+			<date key="time:timestamp" value="2023-08-20T00:00:00" />
+			<date key="start_timestamp" value="2023-08-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="challenging process of getting diagnosed" />
+			<date key="time:timestamp" value="2023-08-20T00:00:00" />
+			<date key="start_timestamp" value="2023-08-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="initial symptoms dismissed as overexertion" />
+			<date key="time:timestamp" value="2023-08-20T00:00:00" />
+			<date key="start_timestamp" value="2023-08-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="receiving confirmed diagnosis after seeking second opinion" />
+			<date key="time:timestamp" value="2023-10-15T00:00:00" />
+			<date key="start_timestamp" value="2023-10-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="experiencing reduced joint pain and swelling with Methotrexate" />
+			<date key="time:timestamp" value="2023-10-20T00:00:00" />
+			<date key="start_timestamp" value="2023-10-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="receiving combination of medications for symptom management" />
+			<date key="time:timestamp" value="2023-10-20T00:00:00" />
+			<date key="start_timestamp" value="2023-10-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="initiating Methotrexate on 20/10/2023" />
+			<date key="time:timestamp" value="2023-10-20T00:00:00" />
+			<date key="start_timestamp" value="2023-10-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribing Prednisone for acute relief on 25/10/2023" />
+			<date key="time:timestamp" value="2023-10-25T00:00:00" />
+			<date key="start_timestamp" value="2023-10-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="adding Hydroxychloroquine to treatment on 05/11/2023" />
+			<date key="time:timestamp" value="2023-11-05T00:00:00" />
+			<date key="start_timestamp" value="2023-11-05T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="using NSAIDs for pain management as needed" />
+			<date key="time:timestamp" value="2023-11-05T00:00:00" />
+			<date key="start_timestamp" value="2023-11-05T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="62" />
+		<event>
+			<string key="concept:name" value="starting symptoms of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2023-06-21T00:00:00" />
+			<date key="start_timestamp" value="2023-06-21T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="challenges in diagnosis process" />
+			<date key="time:timestamp" value="2023-06-21T00:00:00" />
+			<date key="start_timestamp" value="2023-06-21T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="impact on work and routines" />
+			<date key="time:timestamp" value="2023-06-21T00:00:00" />
+			<date key="start_timestamp" value="2023-06-21T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="receiving definitive diagnosis of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2023-09-15T00:00:00" />
+			<date key="start_timestamp" value="2023-09-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="frustration due to delays in diagnosis" />
+			<date key="time:timestamp" value="2023-09-15T00:00:00" />
+			<date key="start_timestamp" value="2023-09-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="side effects of Methotrexate" />
+			<date key="time:timestamp" value="2023-09-15T00:00:00" />
+			<date key="start_timestamp" value="2023-09-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="establishing treatment plan with Methotrexate" />
+			<date key="time:timestamp" value="2023-09-15T00:00:00" />
+			<date key="start_timestamp" value="2023-09-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="adjusting dosage and introducing Hydroxychloroquine" />
+			<date key="time:timestamp" value="2023-09-15T00:00:00" />
+			<date key="start_timestamp" value="2023-09-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="expertise and support of rheumatologist" />
+			<date key="time:timestamp" value="2024-03-10T00:00:00" />
+			<date key="start_timestamp" value="2024-03-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="regular consultations with rheumatologist for check-ups" />
+			<date key="time:timestamp" value="2024-03-10T00:00:00" />
+			<date key="start_timestamp" value="2024-03-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="improvement in quality of life with Adalimumab" />
+			<date key="time:timestamp" value="2024-03-10T00:00:00" />
+			<date key="start_timestamp" value="2024-03-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="customizing treatment plan with Adalimumab" />
+			<date key="time:timestamp" value="2024-03-10T00:00:00" />
+			<date key="start_timestamp" value="2024-03-10T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="65" />
+		<event>
+			<string key="concept:name" value="symptoms affecting daily life" />
+			<date key="time:timestamp" value="2023-06-23T00:00:00" />
+			<date key="start_timestamp" value="2023-06-23T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="referral to rheumatologist" />
+			<date key="time:timestamp" value="2023-06-23T00:00:00" />
+			<date key="start_timestamp" value="2023-06-23T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="starting symptoms of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2023-06-23T00:00:00" />
+			<date key="start_timestamp" value="2023-06-23T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="diagnosis of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2023-07-15T00:00:00" />
+			<date key="start_timestamp" value="2023-07-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="improvement in quality of life" />
+			<date key="time:timestamp" value="2023-07-20T00:00:00" />
+			<date key="start_timestamp" value="2023-07-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="- Methotrexate effectiveness" />
+			<date key="time:timestamp" value="2023-07-20T00:00:00" />
+			<date key="start_timestamp" value="2023-07-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="- Prednisone for acute flares" />
+			<date key="time:timestamp" value="2023-07-25T00:00:00" />
+			<date key="start_timestamp" value="2023-07-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consultation with healthcare professionals" />
+			<date key="time:timestamp" value="2023-08-10T00:00:00" />
+			<date key="start_timestamp" value="2023-08-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="- Hydroxychloroquine for disease-modifying properties" />
+			<date key="time:timestamp" value="2023-08-10T00:00:00" />
+			<date key="start_timestamp" value="2023-08-10T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="63" />
+		<event>
+			<string key="concept:name" value="symptoms spreading to wrists, knees, ankles" />
+			<date key="time:timestamp" value="2023-06-30T00:00:00" />
+			<date key="start_timestamp" value="2023-06-30T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="experiencing severe joint pain, stiffness" />
+			<date key="time:timestamp" value="2023-06-30T00:00:00" />
+			<date key="start_timestamp" value="2023-06-30T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting primary care physician" />
+			<date key="time:timestamp" value="2023-06-30T00:00:00" />
+			<date key="start_timestamp" value="2023-06-30T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="attributing symptoms to work strain" />
+			<date key="time:timestamp" value="2023-06-30T00:00:00" />
+			<date key="start_timestamp" value="2023-06-30T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="receiving definitive diagnosis of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2023-08-15T00:00:00" />
+			<date key="start_timestamp" value="2023-08-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="challenging diagnosis process with misdiagnoses" />
+			<date key="time:timestamp" value="2023-08-15T00:00:00" />
+			<date key="start_timestamp" value="2023-08-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Methotrexate relieving pain and swelling" />
+			<date key="time:timestamp" value="2023-08-20T00:00:00" />
+			<date key="start_timestamp" value="2023-08-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed Methotrexate for inflammation reduction" />
+			<date key="time:timestamp" value="2023-08-20T00:00:00" />
+			<date key="start_timestamp" value="2023-08-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed Prednisone for acute flare-ups" />
+			<date key="time:timestamp" value="2023-09-01T00:00:00" />
+			<date key="start_timestamp" value="2023-09-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Prednisone providing quick relief with side effects" />
+			<date key="time:timestamp" value="2023-09-01T00:00:00" />
+			<date key="start_timestamp" value="2023-09-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed Etanercept (Enbrel) for inflammation control" />
+			<date key="time:timestamp" value="2023-10-10T00:00:00" />
+			<date key="start_timestamp" value="2023-10-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting with rheumatologists, physiotherapists, occupational therapists" />
+			<date key="time:timestamp" value="2023-10-10T00:00:00" />
+			<date key="start_timestamp" value="2023-10-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Etanercept reducing joint pain and stiffness" />
+			<date key="time:timestamp" value="2023-10-10T00:00:00" />
+			<date key="start_timestamp" value="2023-10-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="medications improving quality of life" />
+			<date key="time:timestamp" value="2023-10-10T00:00:00" />
+			<date key="start_timestamp" value="2023-10-10T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="48" />
+		<event>
+			<string key="concept:name" value="referral to rheumatologist for evaluation" />
+			<date key="time:timestamp" value="2023-07-01T00:00:00" />
+			<date key="start_timestamp" value="2023-07-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="experiencing initial Rheumatoid Arthritis symptoms" />
+			<date key="time:timestamp" value="2023-07-01T00:00:00" />
+			<date key="start_timestamp" value="2023-07-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="seeking medical attention for persistent symptoms" />
+			<date key="time:timestamp" value="2023-07-01T00:00:00" />
+			<date key="start_timestamp" value="2023-07-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="attributing symptoms to work strain" />
+			<date key="time:timestamp" value="2023-07-01T00:00:00" />
+			<date key="start_timestamp" value="2023-07-01T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="formal diagnosis of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2023-08-15T00:00:00" />
+			<date key="start_timestamp" value="2023-08-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="diagnosis process ruling out other conditions" />
+			<date key="time:timestamp" value="2023-08-15T00:00:00" />
+			<date key="start_timestamp" value="2023-08-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="starting Methotrexate for joint inflammation" />
+			<date key="time:timestamp" value="2023-08-30T00:00:00" />
+			<date key="start_timestamp" value="2023-08-30T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="using Prednisone for pain relief" />
+			<date key="time:timestamp" value="2023-09-10T00:00:00" />
+			<date key="start_timestamp" value="2023-09-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="adding Hydroxychloroquine for inflammation control" />
+			<date key="time:timestamp" value="2023-09-25T00:00:00" />
+			<date key="start_timestamp" value="2023-09-25T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="importance of right medications in managing illness" />
+			<date key="time:timestamp" value="2023-10-20T00:00:00" />
+			<date key="start_timestamp" value="2023-10-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="regular consultations with rheumatologist for medication adjustments" />
+			<date key="time:timestamp" value="2023-10-20T00:00:00" />
+			<date key="start_timestamp" value="2023-10-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="improved symptoms with treatment" />
+			<date key="time:timestamp" value="2023-10-20T00:00:00" />
+			<date key="start_timestamp" value="2023-10-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="medications enabling balance in work and life" />
+			<date key="time:timestamp" value="2023-10-20T00:00:00" />
+			<date key="start_timestamp" value="2023-10-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="introducing Adalimumab for symptom alleviation" />
+			<date key="time:timestamp" value="2023-10-20T00:00:00" />
+			<date key="start_timestamp" value="2023-10-20T00:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="56" />
+		<event>
+			<string key="concept:name" value="consulting primary care physician" />
+			<date key="time:timestamp" value="2023-08-28T00:00:00" />
+			<date key="start_timestamp" value="2023-08-28T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="symptoms worsening over weeks" />
+			<date key="time:timestamp" value="2023-08-28T00:00:00" />
+			<date key="start_timestamp" value="2023-08-28T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="experiencing symptoms of Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2023-08-28T00:00:00" />
+			<date key="start_timestamp" value="2023-08-28T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="misdiagnoses delaying Rheumatoid Arthritis identification" />
+			<date key="time:timestamp" value="2023-10-10T00:00:00" />
+			<date key="start_timestamp" value="2023-10-10T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="medications mitigating symptoms and enhancing quality of life" />
+			<date key="time:timestamp" value="2023-10-15T00:00:00" />
+			<date key="start_timestamp" value="2023-10-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Methotrexate reducing joint inflammation and pain" />
+			<date key="time:timestamp" value="2023-10-15T00:00:00" />
+			<date key="start_timestamp" value="2023-10-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="prescribed medications for Rheumatoid Arthritis" />
+			<date key="time:timestamp" value="2023-10-15T00:00:00" />
+			<date key="start_timestamp" value="2023-10-15T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Prednisone providing immediate relief during flares" />
+			<date key="time:timestamp" value="2023-10-20T00:00:00" />
+			<date key="start_timestamp" value="2023-10-20T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="consulting multidisciplinary healthcare team" />
+			<date key="time:timestamp" value="2023-11-05T00:00:00" />
+			<date key="start_timestamp" value="2023-11-05T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Hydroxychloroquine supporting inflammation control and joint function" />
+			<date key="time:timestamp" value="2023-11-05T00:00:00" />
+			<date key="start_timestamp" value="2023-11-05T00:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="regular check-ups and medication adjustments for management" />
+			<date key="time:timestamp" value="2023-11-05T00:00:00" />
+			<date key="start_timestamp" value="2023-11-05T00:00:00" />
+		</event>
+	</trace>
+</log>
