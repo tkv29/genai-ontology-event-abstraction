@@ -1,14 +1,19 @@
-import traceback
-from django.http import FileResponse, JsonResponse
-from django.views.generic import TemplateView, View, RedirectView, FormView
-from django.shortcuts import render, redirect
-from GOEA.forms import UploadFilesForm, APIKeyForm
-from GOEA.logic.event_abstractor import EventAbstractor
-from GOEA.logic import utils as u
-from . import settings
+# Standard Library Imports
 import os
 import shutil
+import traceback
+
+# Third-Party Imports
+from django.http import FileResponse, JsonResponse
+from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
+from django.views.generic import TemplateView, View, RedirectView, FormView
+
+# Local Imports
+from . import settings
+from GOEA.forms import UploadFilesForm, APIKeyForm
+from GOEA.logic import utils as u
+from GOEA.logic.event_abstractor import EventAbstractor
 
 
 class APIKeyFormView(FormView):

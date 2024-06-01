@@ -1,9 +1,13 @@
-from rdflib import Graph, RDFS, OWL
+# Standard Library Imports
 import networkx as nx
-import pm4py
+
+# Third-Party Imports
 from django.conf import settings
 from pyvis.network import Network
+from rdflib import Graph, RDFS, OWL
+import pm4py
 
+# Local Imports
 from GOEA.logic import function_calls as fc
 from GOEA.logic import prompts as p
 from GOEA.logic import utils as u

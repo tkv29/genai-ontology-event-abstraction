@@ -1,10 +1,15 @@
-import os
+# Standard Library Imports
 import json
+import os
+
+# Third-Party Imports
 import pandas as pd
 import pm4py
-from openai import OpenAI
-from GOEA.logic import function_calls
 from django.conf import settings
+from openai import OpenAI
+
+# Local Imports
+from GOEA.logic import function_calls
 
 OAIK = os.environ.get("OPENAI_API_KEY")  # Get the OpenAI API key from the environment variables
 MODEL = "gpt-3.5-turbo"
