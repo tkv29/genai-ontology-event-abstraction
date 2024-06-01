@@ -1,13 +1,29 @@
+import traceback
 from django.http import FileResponse, JsonResponse
-from django.views.generic import TemplateView, View
+from django.views.generic import TemplateView, View, RedirectView, FormView
 from django.shortcuts import render, redirect
-from GOEA.forms import UploadFilesForm
+from GOEA.forms import UploadFilesForm, APIKeyForm
 from GOEA.logic.event_abstractor import EventAbstractor
 from GOEA.logic import utils as u
 from . import settings
 import os
 import shutil
+from django.urls import reverse_lazy
 
+
+class APIKeyFormView(FormView):
+    template_name = 'api_login_page.html'
+    form_class = APIKeyForm
+    success_url = reverse_lazy('upload_page')
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['form'] = APIKeyForm()
+        return context
+    
+    def form_valid(self, form):
+        os.environ['OPENAI_API_KEY'] = form.cleaned_data['key']
+        return super().form_valid(form)
 
 class UploadPageView(TemplateView):
     template_name = 'upload_page.html'
@@ -45,7 +61,7 @@ class UploadPageView(TemplateView):
                 print(f'Failed to delete {file_path}. Reason: {e}')
 
 
-class ExtractionView(TemplateView):
+class ExtractionPageView(TemplateView):
     template_name = 'extraction_page.html'
 
     def get_context_data(self, **kwargs):
@@ -90,7 +106,14 @@ class ExtractionView(TemplateView):
         event_abstractor = EventAbstractor.get_instance()
         target_abstraction_depth = request.session.get("abstraction_level")
         custom_ontology_used = request.session.get("custom_ontology_used")
-        abstraction_df = event_abstractor.abstract(self, target_abstraction_depth, custom_ontology_used)
+        try:
+            abstraction_df = event_abstractor.abstract(self, target_abstraction_depth, custom_ontology_used)
+        except Exception as e:
+            return render(
+                self.request,
+                'error_page.html',
+                {'type': type(e).__name__, 'error_traceback': traceback.format_exc()}
+            )
         request.session["abstraction_table"] = abstraction_df.to_html()
         return redirect('result_page')
 
@@ -103,6 +126,23 @@ class ResultPageView(TemplateView):
         context["abstraction_table"] = self.request.session.get("abstraction_table")
         return context
 
+class ResetApiKey(RedirectView):
+    """View for resetting the API key."""
+
+    url = reverse_lazy("upload_page")
+
+    def get(self, request, *args, **kwargs):
+        """Handle GET requests by deleting the API key from the environment and redirecting to the landing page."""
+        try:
+            del os.environ['OPENAI_API_KEY']
+        except KeyError as e:
+            return render(
+                self.request,
+                'error_page.html',
+                {'type': type(e).__name__,'error_traceback': traceback.format_exc()}
+            )
+
+        return super().get(request, *args, **kwargs)
 
 class DownloadPageView(View):
     def post(self, request, *args, **kwargs):

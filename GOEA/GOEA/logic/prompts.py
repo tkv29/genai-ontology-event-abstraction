@@ -13,11 +13,11 @@ IDENTIFY_MESSAGES = [
 EXTRACTION_MESSAGES = [
     {
         "role": "system",
-        "content": "You are a medication extraction system. Your task is to take a sentence as input and return only the medication name mentioned in the sentence. If no medication is mentioned, return 'NA'."
+        "content": "You are a medication extraction system. Your task is to take a sentence as input and return only the medication name mentioned in the sentence. If no medication is mentioned, return 'N/A'."
     },
     {
         "role": "user",
-        "content": "Please extract the medication name from the following sentence:"
+        "content": "Please extract the medication name from the following sentences:"
     },
     {
         "role": "user",
@@ -29,7 +29,7 @@ EXTRACTION_MESSAGES = [
     },
     {
         "role": "user",
-        "content": "Aspirin was prescribed to me"
+        "content": "Aspirin was prescribed to me."
     },
     {
         "role": "assistant",
@@ -42,19 +42,20 @@ EXTRACTION_MESSAGES = [
     {
         "role": "assistant",
         "content": "N/A"
-    },
+    }
 ]
 
-ABSTRACTION_MESSAGES =[
+
+ABSTRACTION_MESSAGES = [
     {
         "role": "system",
-        "content": """You are an hierachy expert. Given a medication hierachy, a target abstraction level (number) and a medication, return the upper class on the target abstraction level of the given medication. 
-        That means if the term is part of the hierachy map it to the target abstraction level in the hierachy. If the medication is not part of the hierachy, output 'N/A'.""",
+        "content": """You are a hierarchy expert. Given a medication hierarchy, a target abstraction level (number), and a medication, return the upper class on the target abstraction level of the given medication. 
+        If the term is part of the hierarchy, map it to the target abstraction level in the hierarchy. If the medication is not part of the hierarchy, output 'N/A'.""",
     },
     {
         "role": "user",
         "content": """
-        Here is the hierachy you should use as reference:
+        Here is the hierarchy you should use as reference:
         2. Non-steroidal anti-inflammatory agent
           3. Ketorolac trometamol
           3. Mefenamate
@@ -77,9 +78,10 @@ ABSTRACTION_MESSAGES =[
           3. Methylprednisolone
           3. Triamcinolone
 
-        Check if the following medicine is part of the hierarchy and map them to the uppermost class on the target abstraction level. If the term is not part of the hierarchy, return N/A.
+        Check if the following medication is part of the hierarchy and map it to the uppermost class on the target abstraction level. If the term is not part of the hierarchy, return N/A.
 
-        The target abstraction level should be: "2." """
+        The target abstraction level should be: "2."
+        """
     },
     {
         "role": "user",
@@ -88,7 +90,6 @@ ABSTRACTION_MESSAGES =[
     {
         "role": "assistant",
         "content": "Non-steroidal anti-inflammatory agent"
-    
     },
     {
         "role": "user",
@@ -116,7 +117,8 @@ ABSTRACTION_MESSAGES =[
     },
     {
         "role": "user",
-        "content": """Here is hierachy you should use as reference:
+        "content": """
+        Here is the hierarchy you should use as reference:
           1. Drug or medicament
             2. Non-steroidal anti-inflammatory agent
               3. Bromfenac sodium
@@ -133,10 +135,11 @@ ABSTRACTION_MESSAGES =[
               3. Sulfasalazine
             2. Adrenal cortex hormone
               3. Prednisone
-        
-        Check if the following medicine is part of the hierarchy and map them to the uppermost class on the target abstraction level. If the term is not part of the hierarchy, return N/A.
 
-        The target abstraction level should be: "1." """
+        Check if the following medication is part of the hierarchy and map it to the uppermost class on the target abstraction level. If the term is not part of the hierarchy, return N/A.
+
+        The target abstraction level should be: "1."
+        """
     },
     {
         "role": "user",
@@ -156,7 +159,7 @@ ABSTRACTION_MESSAGES =[
     },
     {
         "role": "user",
-        "content": "What is the uppermost class of Celecoxib which is on the level:1?"
+        "content": "What is the uppermost class of Celecoxib which is on the level: 1?"
     },
     {
         "role": "assistant",
@@ -169,13 +172,14 @@ ABSTRACTION_MESSAGES =[
     {
         "role": "assistant",
         "content": "Drug or medicament"
-    },
+    }
 ]
+
 
 CUSTOM_ABSTRACTION_MESSAGES = [
     {
         "role": "system",
-        "content": """You are an medication expert. Given a hieracevel (number) and a medication, classify the medication to one upper class on the target abstraction level.
+        "content": """You are an medication expert. Given a hierachy level (number) and a medication, classify the medication to one upper class on the target abstraction level.
         That means categorize the medication in a upper class. If you think that the medication is not fitting in any of the categories, output 'N/A'. """
     },
     {

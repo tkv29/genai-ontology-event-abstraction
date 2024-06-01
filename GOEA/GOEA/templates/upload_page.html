@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body class="main_body">
-    <img src="{% static '/img/icon.png' %}" alt="GOEA Logo" class="logo">
+    <a href="{% url 'api_key_page' %}">
+        <img src="{% static '/img/key.png' %}" class="key_icon">
+    </a>
+    <img src="{% static '/img/logo.png' %}" alt="GOEA Logo" class="logo">
     <h1>GO - Event Abstraction</h1>
     <h3>Where Events Meet Abstraction Through GenAI and Ontology</h3>
     <form method="POST" enctype="multipart/form-data">
@@ -38,6 +41,5 @@
     </div>
         <button type="submit" class="btn btn-outline-secondary btn-lg mt-4 btn-block">Next</button>
     </form>
-
 </body>
 </html>

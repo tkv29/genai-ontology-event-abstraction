@@ -227,3 +227,53 @@ hr.rounded {
 .not_visible {
   display: none;
 }
+
+.key_icon {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 9999;
+  width: 3%;
+  height: auto;
+}
+
+.error_logo {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* FORM ERRORS */
+div.form-errors ul {
+  list-style-type: none; /* Ensures no bullet points and overrides other styles */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+div.form-errors li {
+  color: #DB3A34;
+  font-weight: bold;
+}
+
+.error_traceback {
+  font-weight: bold;
+  color: #333;
+}
+
+.error_textarea {
+  width: 100%;
+  height: 200px;
+  resize: vertical;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.item-container {
+  display: flex;
+}
