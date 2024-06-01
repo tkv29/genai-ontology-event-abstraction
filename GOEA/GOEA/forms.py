@@ -7,4 +7,4 @@ class UploadFilesForm(forms.ModelForm):
         fields = ['xes_file', 'owl_file', 'custom_ontology_used']
 
 class APIKeyForm(forms.Form):
-    key = forms.CharField(max_length = 100)
+    key = forms.CharField(label='OpenAI API Key', max_length = 100)
