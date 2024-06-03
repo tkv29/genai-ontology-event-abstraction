@@ -55,9 +55,11 @@ def query_gpt(messages, max_tokens=MAX_TOKENS, temperature=TEMPERATURE_SUMMARIZI
 def dataframe_to_xes(df, name, activity_key):
     """Conversion from dataframe to xes file."""
     # Convert 'start' columns to datetime
-    df["start_timestamp"] = pd.to_datetime(df["start_timestamp"])
+    if "start_timestamp" in df.columns:
+        df["start_timestamp"] = pd.to_datetime(df["start_timestamp"])
 
     # Renaming columns for Disco
+    df = df.copy()
     df.rename(
         columns={
             "start_timestamp": "time:timestamp",  # Disco takes time:timestamp as timestamp key
