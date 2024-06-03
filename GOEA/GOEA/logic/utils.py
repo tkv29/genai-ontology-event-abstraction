@@ -75,7 +75,7 @@ def dataframe_to_xes(df, name):
     }
     event_log = pm4py.objects.conversion.log.converter.apply(df, parameters=parameters)
     
-    output_path = settings.BASE / "GOEA/content/"
+    output_path = settings.BASE_DIR / "GOEA/content/"
     xes_file = output_path / name
     pm4py.write_xes(
         event_log,

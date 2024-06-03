@@ -152,9 +152,10 @@ class ResetApiKey(RedirectView):
 class DownloadPageView(View):
     def post(self, request, *args, **kwargs):
         event_abstractor = EventAbstractor.get_instance()
-        xes_file_path = u.dataframe_to_xes(df=event_abstractor.get_data(), name="abstracted_medication_xes")
-        with open(xes_file_path, "rb") as file:
-            response = FileResponse(file, as_attachment=True)
-            response["Content-Disposition"] = f'attachment; filename="{os.path.basename(xes_file_path)}"'
+        xes_file_path = u.dataframe_to_xes(df=event_abstractor.get_data(), name="abstracted_medication.xes")
 
+        file_name = os.path.basename(xes_file_path)
+        response = FileResponse(open(xes_file_path, "rb"), as_attachment=True)
+        response["Content-Disposition"] = f'attachment; filename="{file_name}"'
+        
         return response
