@@ -52,16 +52,16 @@ def query_gpt(messages, max_tokens=MAX_TOKENS, temperature=TEMPERATURE_SUMMARIZI
     return output
 
 
-def dataframe_to_xes(df, name):
+def dataframe_to_xes(df, name, activity_key):
     """Conversion from dataframe to xes file."""
-    # Convert 'start' and 'end' columns to datetime
+    # Convert 'start' columns to datetime
     df["start_timestamp"] = pd.to_datetime(df["start_timestamp"])
-    
+
     # Renaming columns for Disco
     df.rename(
         columns={
             "start_timestamp": "time:timestamp",  # Disco takes time:timestamp as timestamp key
-            "medication_abstracted": "concept:name",  # We want Disco to take medications as activities
+            activity_key: "concept:name",  # Disco takes concept:name as activity key
         },
         inplace=True,
     )
@@ -80,7 +80,6 @@ def dataframe_to_xes(df, name):
     pm4py.write_xes(
         event_log,
         xes_file,
-        activity_key="activity",
         case_id_key="case:concept:name",
         timestamp_key="time:timestamp",
     )

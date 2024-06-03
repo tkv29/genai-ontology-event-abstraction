@@ -17,15 +17,12 @@
 
     <form id="downloadForm" action="{% url 'download_page' %}" method="post" enctype="multipart/form-data">
         {% csrf_token %}
-        <input type="submit" value="Download Abstracted XES" class="btn btn-outline-secondary btn-lg mt-4 btn-block">
+        <input type="submit" value="Download XES Files" class="btn btn-outline-secondary btn-lg mt-4 btn-block">
     </form>
 
 
     <a href="{% url 'extraction_page' %}">
         <button class="btn btn-outline-secondary btn-lg mt-4 btn-block">Return To Extraction Page</button>
-    </a>
-    <a href="{% url 'upload_page' %}">
-        <button class="btn btn-outline-secondary btn-lg mt-4 btn-block">Return To Upload Page</button>
     </a>
 </body>
 

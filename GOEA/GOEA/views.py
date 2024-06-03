@@ -2,6 +2,8 @@
 import os
 import shutil
 import traceback
+import zipfile
+from tempfile import NamedTemporaryFile
 
 # Third-Party Imports
 from django.http import FileResponse, JsonResponse
@@ -152,10 +154,26 @@ class ResetApiKey(RedirectView):
 class DownloadPageView(View):
     def post(self, request, *args, **kwargs):
         event_abstractor = EventAbstractor.get_instance()
-        xes_file_path = u.dataframe_to_xes(df=event_abstractor.get_data(), name="abstracted_medication.xes")
-
-        file_name = os.path.basename(xes_file_path)
-        response = FileResponse(open(xes_file_path, "rb"), as_attachment=True)
-        response["Content-Disposition"] = f'attachment; filename="{file_name}"'
+        files_to_download = []
+        xes_medication_path = u.dataframe_to_xes(df=event_abstractor.get_data(), name="medication.xes", activity_key="medication")
+        xes_abstracted_medication_path = u.dataframe_to_xes(df=event_abstractor.get_xes_df(), name="abstracted_medication.xes", activity_key="abstracted_medication")        
+        files_to_download.append(xes_medication_path)
+        files_to_download.append(xes_abstracted_medication_path)
         
+        return self.zip_files_response(files_to_download)
+    
+    @staticmethod
+    def zip_files_response(files_to_download):
+        """Prepare a ZIP file for multiple files to download."""
+        with NamedTemporaryFile(mode="w+b", suffix=".zip", delete=False) as temp_zip:
+            with zipfile.ZipFile(temp_zip, "w", zipfile.ZIP_DEFLATED) as zipf:
+                for file_path in files_to_download:
+                    file_name = os.path.basename(file_path)
+                    zipf.write(file_path, arcname=file_name)
+
+            temp_zip.close()
+
+            response = FileResponse(open(temp_zip.name, "rb"), as_attachment=True)
+            response["Content-Disposition"] = 'attachment; filename="downloaded_files.zip"'
+
         return response
