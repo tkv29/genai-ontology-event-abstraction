@@ -8,10 +8,8 @@ from rdflib import Graph, RDFS, OWL
 import pm4py
 
 # Local Imports
-from GOEA.logic import function_calls as fc
 from GOEA.logic import prompts as p
 from GOEA.logic import utils as u
-
 
 class EventAbstractor:
     """Singleton class that abstracts events from a XES file using an ontology file."""
@@ -149,50 +147,41 @@ class EventAbstractor:
 
         total_rows = len(event_log_df)
         event_log_df["medication"] = event_log_df.apply(lambda row: self._start_extraction_medication(row, view, total_rows), axis=1)
-        event_log_df_filtered = event_log_df.loc[event_log_df['medication'] != 'N/A']
+        event_log_df = event_log_df.loc[event_log_df['medication'] != 'N/A']
 
+        event_log_df["normalized_medication"] = event_log_df.apply(lambda row: self._start_normalization_medication(row, view, total_rows), axis=1)
         ontology_string = self.create_ontology_representation(abstraction_level)
-        total_rows = len(event_log_df_filtered)
-        event_log_df_filtered = event_log_df_filtered.reset_index(drop=True)
-        event_log_df_filtered["abstracted_medication"] = event_log_df_filtered.apply(
+        total_rows = len(event_log_df)
+        event_log_df = event_log_df.reset_index(drop=True)
+        event_log_df["abstracted_medication"] = event_log_df.apply(
             lambda row: self._start_medication_abstraction(
                 row, ontology_string, abstraction_level, custom_ontology_used, view, total_rows
             ),
             axis=1
         )
-        event_log_df_filtered = event_log_df_filtered.loc[event_log_df_filtered['abstracted_medication'] != 'N/A']
+        event_log_df = event_log_df.loc[event_log_df['abstracted_medication'] != 'N/A']
 
-        self.data = event_log_df_filtered
-        return event_log_df_filtered
+        self.data = event_log_df
+        return event_log_df
 
     def _start_extraction_medication(self, row, view, total_rows):
-        medication = self._extract_medication(row["activity"])
+        extracted_medication = self._extract_medication(row["activity"])
         row_number = row.name
         self._update_progress(view, row_number, total_rows, "Extracting Drug or Medicament of Activities")
-        return medication
+        return extracted_medication
+    
+    def _start_normalization_medication(self, row, view, total_rows):
+        normalized_medication = self._normalize_medication(row["medication"])
+        row_number = row.name
+        self._update_progress(view, row_number, total_rows, "Normalizing Drug or Medicament of Extracted Medication")
+        return normalized_medication
     
     def _start_medication_abstraction(self, row, ontology_string, abstraction_level, custom_ontology_used, view, total_rows):
-        medication = row["medication"]
+        medication = row["normalized_medication"]
         abstracted_medication = self._abstract_medication(ontology_string, medication, abstraction_level, custom_ontology_used)
         row_number = row.name
         self._update_progress(view, row_number, total_rows, "Abstracting Drug Medicament on Target Abstraction Level")
         return abstracted_medication
-
-    @staticmethod
-    def _identify_relevant_activities(activities):
-        identify_messages = p.IDENTIFY_MESSAGES[:]
-        identify_messages.append(
-            {
-                "role": "user",
-                "content": activities.to_string(),
-            }
-        )
-        relevant_activities = u.query_gpt(
-            messages=identify_messages,
-            tools=fc.TOOLS,
-            tool_choice={"type": "function", "function": {"name": "extract_medication_rows"}}
-        )
-        return relevant_activities
 
     @staticmethod
     def _extract_medication(activity):
@@ -203,8 +192,20 @@ class EventAbstractor:
                 "content": activity,
             }
         )
-        medication = u.query_gpt(messages=extraction_messages)
-        return medication
+        extracted_medication = u.query_gpt(messages=extraction_messages)
+        return extracted_medication
+    
+    @staticmethod
+    def _normalize_medication(extracted_medication):
+        extraction_messages = p.NORMALIZATION_MESSAGES[:]
+        extraction_messages.append(
+            {
+                "role": "user",
+                "content": extracted_medication,
+            }
+        )
+        normalized_medication = u.query_gpt(messages=extraction_messages)
+        return normalized_medication
 
     @staticmethod
     def _abstract_medication(ontology, medication, abstraction_level, custom_ontology_used):

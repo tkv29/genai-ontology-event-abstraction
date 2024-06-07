@@ -1,15 +1,3 @@
-IDENTIFY_MESSAGES = [
-  {
-    "role": "system",
-    "content": """You are a medication identifier system. Your task is to take a table as input and return only the rows containing information related to medications. 
-    A row is considered related to medications if it contains the name about a specific medication."""
-  },   
-  {
-      "role": "user",
-      "content": "Please extract only the rows which contain information about specifc mediactions. Discard all other rows. Here are the rows from the table:"
-  }
-]
-
 EXTRACTION_MESSAGES = [
     {
         "role": "system",
@@ -44,6 +32,61 @@ EXTRACTION_MESSAGES = [
         "content": "N/A"
     }
 ]
+
+NORMALIZATION_MESSAGES = [
+    {
+        "role": "system",
+        "content": "You are an expert in pharmaceuticals. Your task is to normalize medication names to their standard form, excluding any dosage information. Recognize and convert common abbreviations to their full medication names. Return all medications with intial capital letter. Provide only the normalized medication name as the output."
+    },
+    {
+        "role": "user",
+        "content": "Normalize the following medication names to their standard form, excluding any dosage information. Capitalized the first letter of every medication."
+    },
+    {
+        "role": "user",
+        "content": "Ibuprofen 100mg"
+    },
+    {
+        "role": "assistant",
+        "content": "Ibuprofen"
+    },
+    {
+        "role": "user",
+        "content": "mtx"
+    },
+    {
+        "role": "assistant",
+        "content": "Methotrexate"
+    },
+    {
+        "role": "user",
+        "content": "ASA 81mg"
+    },
+    {
+        "role": "assistant",
+        "content": "Aspirin"
+    },
+    {
+        "role": "user",
+        "content": "APAP"
+    },
+    {
+        "role": "assistant",
+        "content": "Acetaminophen"
+    },
+    {
+        "role": "user",
+        "content": "adalimumab"
+    },
+    {
+        "role": "assistant",
+        "content": "Adalimumab"
+    }
+]
+
+
+
+
 
 
 ABSTRACTION_MESSAGES = [
