@@ -1,7 +1,7 @@
 EXTRACTION_MESSAGES = [
     {
         "role": "system",
-        "content": "You are a medication extraction system. Your task is to take a sentence as input and return only the medication name mentioned in the sentence. If no medication is mentioned, return 'N/A'."
+        "content": "You are a medication extraction system. Your task is to take a sentence as input and return only the information related to the medication like medication name and dosage without changing it. If no medication is mentioned, return 'N/A'."
     },
     {
         "role": "user",
@@ -9,19 +9,19 @@ EXTRACTION_MESSAGES = [
     },
     {
         "role": "user",
-        "content": "3 weeks I took Leflunomide."
+        "content": "3 weeks I took Leflunomide 20mg."
     },
     {
         "role": "assistant",
-        "content": "Leflunomide"
+        "content": "Leflunomide 20mg"
     },
     {
         "role": "user",
-        "content": "Aspirin was prescribed to me."
+        "content": "Aspirin Tablets was prescribed to me."
     },
     {
         "role": "assistant",
-        "content": "Aspirin"
+        "content": "Aspirin Tablets"
     },
     {
         "role": "user",
@@ -30,7 +30,31 @@ EXTRACTION_MESSAGES = [
     {
         "role": "assistant",
         "content": "N/A"
-    }
+    },
+    {
+        "role": "user",
+        "content": "Took Ibuprofen 100mg."
+    },
+    {
+        "role": "assistant",
+        "content": "Ibuprofen 100mg"
+    },
+    {
+        "role": "user",
+        "content": "MTX 10mg was prescribed to me."
+    },
+    {
+        "role": "assistant",
+        "content": "MTX 10mg"
+    },
+    {
+        "role": "user",
+        "content": "starting to use NPX 10mg"
+    },
+    {
+        "role": "assistant",
+        "content": "MTX 10mg"
+    },
 ]
 
 NORMALIZATION_MESSAGES = [
@@ -81,6 +105,14 @@ NORMALIZATION_MESSAGES = [
     {
         "role": "assistant",
         "content": "Adalimumab"
+    },
+    {
+        "role": "user",
+        "content": "NPX"
+    },
+    {
+        "role": "user",
+        "content": "Naproxen"
     }
 ]
 
