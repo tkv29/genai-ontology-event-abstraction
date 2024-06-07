@@ -67,6 +67,12 @@ hr.rounded {
     width: 100%;
 }
 
+.table-container_big {
+  max-height: 600px; 
+  overflow-y: auto;
+  width: 100%;
+}
+
 #textbox-container {
   height: 702px; 
 }
