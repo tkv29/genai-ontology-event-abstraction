@@ -156,9 +156,12 @@ class DownloadPageView(View):
         event_abstractor = EventAbstractor.get_instance()
         files_to_download = []
         event_abstractor_df = event_abstractor.get_data().copy()
+        xes_medication_path = u.dataframe_to_xes(df=event_abstractor_df, name="medication.xes", activity_key="medication")
+        xes_normalized_path = u.dataframe_to_xes(df=event_abstractor_df, name="normalized_medication.xes", activity_key="normalized_medication")
         xes_abstracted_medication_path = u.dataframe_to_xes(df=event_abstractor_df, name="abstracted_medication.xes", activity_key="abstracted_medication")
-        xes_medication_path = u.dataframe_to_xes(df=event_abstractor_df, name="medication.xes", activity_key="medication")        
+             
         files_to_download.append(xes_medication_path)
+        files_to_download.append(xes_normalized_path)
         files_to_download.append(xes_abstracted_medication_path)
         
         return self.zip_files_response(files_to_download)

@@ -53,7 +53,7 @@ EXTRACTION_MESSAGES = [
     },
     {
         "role": "assistant",
-        "content": "MTX 10mg"
+        "content": "NPX 10mg"
     },
 ]
 
