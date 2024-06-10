@@ -3,7 +3,7 @@ from django.core.validators import FileExtensionValidator
 
 class UploadedFiles(models.Model):
     xes_file = models.FileField(upload_to='uploads/', validators=[FileExtensionValidator(allowed_extensions=['xes'])])
-    owl_file = models.FileField(upload_to='uploads/', validators=[FileExtensionValidator(allowed_extensions=['owl'])])
+    owl_file = models.FileField(upload_to='uploads/', validators=[FileExtensionValidator(allowed_extensions=['owl', 'rdf', 'ttl'])])
     xes_content = models.TextField()
     owl_content = models.TextField()
     xes_file_path = models.CharField(max_length=255)
