@@ -209,7 +209,7 @@ class EventAbstractor:
 
     @staticmethod
     def _abstract_medication(ontology, medication, abstraction_level, custom_ontology_used):
-        if custom_ontology_used == "True":
+        if custom_ontology_used:
             abstraction_messages = p.CUSTOM_ABSTRACTION_MESSAGES[:]
             abstraction_messages.extend([
                 {
