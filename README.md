@@ -1,6 +1,9 @@
 # GenAI Ontology-based Event Abstraction (GOEA)
 
-This is a prototype implementation of the GOEA Methodology proposed in a bachelor thesis. The GOEA methodology proposes an approach to extract, normalize, and abstract terms using ontologies and Large Language Models.
+This is a prototype implementation of the GOEA Methodology proposed in a bachelor thesis. The GOEA methodology proposes an approach to extract, normalize, and abstract terms using ontologies and Large Language Models. While the methodology itself is applicable to various domains, this prototype specifically focuses on testing it in the context of medications.
+
+![methodology](https://github.com/tkv29/genai-ontology-event-abstraction/assets/73845255/74daf6f9-6198-4f2c-8a08-be570615df7b)
+
 
 ## Requirements
 
@@ -22,15 +25,21 @@ To run GOEA successfully, it is essential to obtain an OpenAI API key with adequ
 1. Clone the repository using `git clone`.
 2. Install Python and pip, and then install all the requirements listed in the `requirements.txt` file using pip.
 3. Start the server by running `python3 manage.py runserver`.
+4. Follow the walkthrough.
 
 ## Walkthrough
 
 1. Enter your OpenAI API Key. If you enter the wrong key, click on the Key Icon to retype your key.
+![image](https://github.com/tkv29/genai-ontology-event-abstraction/assets/73845255/7ad3292a-56f4-4011-9011-bcea16677b59)
 2. Upload an Event Log as an XES file and an Ontology as an RDF or OWL file. Please tick the box if you are using a custom ontology or not.
+![image](https://github.com/tkv29/genai-ontology-event-abstraction/assets/73845255/edb18628-a7c7-48c4-9ba9-30dfb47e02aa)
 3. Here you can check your uploaded event log and ontology as a string representation but also as a graphical representation. Nodes are color-coded as follows:
    - **Orange Nodes:** These nodes represent the target abstraction levels to which the blue nodes will be mapped.
    - **Blue Nodes:** These nodes represent the specific terms that will be abstracted to the corresponding orange nodes.
    - **Grey Nodes:** These nodes are not considered in the abstraction process at the current target abstraction level and are therefore visually distinguished from the relevant nodes.
+![Bildschirmfoto_16-6-2024_231029_127 0 0 1](https://github.com/tkv29/genai-ontology-event-abstraction/assets/73845255/62e2b5ec-06d1-4628-85b8-60f3e6a16e72)
 
    Please select a target abstraction level using the slider.
-4. Start the abstraction process.
+4. Start the abstraction process by clicking on "GO - Event Abstraction"
+5. After the abstraction process you can download the Event Logs with the Extracted Medications, Normalized Medications and Abstracted Medications.
+![Bildschirmfoto_16-6-2024_231219_127 0 0 1](https://github.com/tkv29/genai-ontology-event-abstraction/assets/73845255/d71661ba-ab8c-4576-a58e-f2a78dc8034d)
