@@ -31,7 +31,7 @@ To run GOEA successfully, it is essential to obtain an OpenAI API key with adequ
 
 1. Enter your OpenAI API Key. If you enter the wrong key, click on the Key Icon to retype your key.
 ![image](https://github.com/tkv29/genai-ontology-event-abstraction/assets/73845255/7ad3292a-56f4-4011-9011-bcea16677b59)
-2. Upload an Event Log as an XES file and an Ontology as an RDF or OWL file. Please tick the box if you are using a custom ontology or not.
+2. Upload an Event Log as an XES file and an Ontology as an RDF or OWL file (you can find sample files in content folder that was used in the thesis). Please tick the box if you are using a custom ontology or not.
 ![image](https://github.com/tkv29/genai-ontology-event-abstraction/assets/73845255/edb18628-a7c7-48c4-9ba9-30dfb47e02aa)
 3. Here you can check your uploaded event log and ontology as a string representation but also as a graphical representation. Nodes are color-coded as follows:
    - **Orange Nodes:** These nodes represent the target abstraction levels to which the blue nodes will be mapped.
