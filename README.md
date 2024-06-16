@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/776892452.svg)](https://zenodo.org/doi/10.5281/zenodo.11874804)
 # GenAI Ontology-based Event Abstraction (GOEA)
 
 This is a prototype implementation of the GOEA Methodology proposed in a bachelor thesis. The GOEA methodology proposes an approach to extract, normalize, and abstract terms using ontologies and Large Language Models. While the methodology itself is applicable to various domains, this prototype specifically focuses on testing it in the context of medications.
