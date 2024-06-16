@@ -147,19 +147,16 @@ class EventAbstractor:
 
         total_rows = len(event_log_df)
         event_log_df["medication"] = event_log_df.apply(lambda row: self._start_extraction_medication(row, view, total_rows), axis=1)
-        event_log_df = event_log_df.loc[event_log_df['medication'] != 'N/A']
 
         event_log_df["normalized_medication"] = event_log_df.apply(lambda row: self._start_normalization_medication(row, view, total_rows), axis=1)
         ontology_string = self.create_ontology_representation(abstraction_level)
         total_rows = len(event_log_df)
-        event_log_df = event_log_df.reset_index(drop=True)
         event_log_df["abstracted_medication"] = event_log_df.apply(
             lambda row: self._start_medication_abstraction(
                 row, ontology_string, abstraction_level, custom_ontology_used, view, total_rows
             ),
             axis=1
         )
-        event_log_df = event_log_df.loc[event_log_df['abstracted_medication'] != 'N/A']
 
         self.data = event_log_df
         return event_log_df
@@ -171,14 +168,18 @@ class EventAbstractor:
         return extracted_medication
     
     def _start_normalization_medication(self, row, view, total_rows):
-        normalized_medication = self._normalize_medication(row["medication"])
+        normalized_medication = "N/A"
+        if row["medication"] != "N/A":
+            normalized_medication = self._normalize_medication(row["medication"])
         row_number = row.name
         self._update_progress(view, row_number, total_rows, "Normalizing Drug or Medicament of Extracted Medication")
         return normalized_medication
     
     def _start_medication_abstraction(self, row, ontology_string, abstraction_level, custom_ontology_used, view, total_rows):
+        abstracted_medication = "N/A"
         medication = row["normalized_medication"]
-        abstracted_medication = self._abstract_medication(ontology_string, medication, abstraction_level, custom_ontology_used)
+        if medication != "N/A":
+            abstracted_medication = self._abstract_medication(ontology_string, medication, abstraction_level, custom_ontology_used)
         row_number = row.name
         self._update_progress(view, row_number, total_rows, "Abstracting Drug Medicament on Target Abstraction Level")
         return abstracted_medication
