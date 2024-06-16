@@ -14,7 +14,7 @@ To run GOEA successfully, it is essential to obtain an OpenAI API key with adequ
 ### Installation through Docker
 
 1. Download the content folder from the GitHub repository as it contains example event logs and ontologies used in the bachelor thesis.
-2. Download the Docker release.
+2. Download the latest Docker [release](https://github.com/tkv29/genai-ontology-event-abstraction/releases).
 3. Load the Docker Image: Open a terminal or command prompt and navigate to the directory where you downloaded the Docker image file. Run the following command to load the image: `docker load -i goea.tar`
 4. Run the Docker Container: After the image is successfully loaded, run the following command to start the GOEA container: `docker run -p 8000:8000 goea`. This command will start the container and map port 8000 from the container to port 8000 on your local machine. You may need to use `sudo` depending on your system setup.
 5. Access GOEA: Open a web browser and navigate to http://localhost:8000/. This will bring you to the prototype application, where you can enter your OpenAI API Key and start abstracting event logs.
