@@ -1,0 +1,721 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://example.com/ontology#"
+     xml:base="http://example.com/ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://snomed.info/sct/900000000000207008">
+        <owl:versionIRI rdf:resource="http://snomed.info/sct/900000000000207008/version/20240211"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://snomed.info/id/108513001 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/108513001">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Ketorolac trometamol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/108515008 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/108515008">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Diclofenac potassium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/108518005 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/108518005">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Oxaprozin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/108520008 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/108520008">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Bromfenac</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/108521007 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/108521007">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Bromfenac sodium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/108849007 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/108849007">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Suprofen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/116593003 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/116593003">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/21568003"/>
+        <rdfs:label>Methylprednisolone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/116594009 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/116594009">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/21568003"/>
+        <rdfs:label>Triamcinolone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/116601002 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/116601002">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/21568003"/>
+        <rdfs:label>Prednisolone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/116602009 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/116602009">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/21568003"/>
+        <rdfs:label>Prednisone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/116604005 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/116604005">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/21568003"/>
+        <rdfs:label>Paramethasone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/116605006 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/116605006">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/21568003"/>
+        <rdfs:label>Paramethasone acetate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/116727007 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/116727007">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Mefenamate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/117178002 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/117178002">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Meclofenamate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/125710006 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/125710006">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Carprofen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/1269127009 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/1269127009">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Indometacin sodium anhydrous</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/1299094002 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/1299094002">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Polmacoxib</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/136501000146105 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/136501000146105">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Piketoprofen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/18991000122102 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/18991000122102">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Loxoprofen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/21568003 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/21568003">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/410942007"/>
+        <rdfs:label>Adrenal cortex hormone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/22192002 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/22192002">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Salicylamide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/273951003 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/273951003">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Phenylbutazone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/273952005 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/273952005">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Bufexamac</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/322300008 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/322300008">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Nefopam hydrochloride</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/331143003 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/331143003">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Benzydamine hydrochloride</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/372501008 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/372501008">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Ketorolac</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/372574004 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/372574004">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372823004"/>
+        <rdfs:label>Azathioprine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/372588000 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/372588000">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Naproxen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/372665008 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/372665008">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/410942007"/>
+        <rdfs:label>Non-steroidal anti-inflammatory agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/372688009 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/372688009">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/410942007"/>
+        <rdfs:label>Antineoplastic agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/372748008 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/372748008">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Tolmetin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/372823004 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/372823004">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/410942007"/>
+        <rdfs:label>Immunosuppressant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/373244000 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/373244000">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/410942007"/>
+        <rdfs:label>Immunologic agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/373249005 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/373249005">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/410942007"/>
+        <rdfs:label>Anti-infective agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/373506008 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/373506008">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Flurbiprofen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/373513008 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/373513008">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Indometacin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/373525006 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/373525006">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Fenoprofen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/373540008 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/373540008">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/373249005"/>
+        <rdfs:label>Hydroxychloroquine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/386832008 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/386832008">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Ketoprofen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/386859000 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/386859000">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Nabumetone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/386860005 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/386860005">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Etodolac</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/386975001 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/386975001">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372823004"/>
+        <rdfs:label>Tacrolimus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/386976000 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/386976000">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372823004"/>
+        <rdfs:label>Mycophenolate mofetil</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/386981009 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/386981009">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/373244000"/>
+        <rdfs:label>Leflunomide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/387055000 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/387055000">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Meloxicam</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/387153005 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/387153005">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Piroxicam</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/387207008 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/387207008">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Ibuprofen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/387248006 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/387248006">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/373249005"/>
+        <rdfs:label>Sulfasalazine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/387381009 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/387381009">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372688009"/>
+        <rdfs:label>Methotrexate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/387467008 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/387467008">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372823004"/>
+        <rdfs:label>Ciclosporin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/387513000 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/387513000">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Sulindac</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/391703003 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/391703003">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Aceclofenac</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/391704009 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/391704009">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Acemetacin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/391798003 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/391798003">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Azapropazone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/395898001 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/395898001">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Tenoxicam</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/395902007 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/395902007">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Tiaprofenic acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/395910008 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/395910008">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Tolfenamic acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/396018005 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/396018005">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Dexketoprofen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/396051001 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/396051001">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Felbinac</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/396052008 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/396052008">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Fenbufen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/396197001 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/396197001">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Benoxaprofen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/409330005 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/409330005">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372823004"/>
+        <rdfs:label>Mycophenolic acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/410942007 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/410942007">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>Drug or medicament</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/418868002 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/418868002">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Dexibuprofen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/419460005 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/419460005">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Nepafenac</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/421319000 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/421319000">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Benzydamine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/423045006 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/423045006">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Firocoxib</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/424281006 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/424281006">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Deracoxib</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/424967004 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/424967004">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Lumiracoxib</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/58233009 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/58233009">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/117178002"/>
+        <rdfs:label>Meclofenamate sodium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/62039007 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/62039007">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Diclofenac sodium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/7034005 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/7034005">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Diclofenac</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/703479000 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/703479000">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372665008"/>
+        <rdfs:label>Nimesulide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/704313003 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/704313003">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372823004"/>
+        <rdfs:label>Tofacitinib</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/704314009 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/704314009">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372823004"/>
+        <rdfs:label>Tofacitinib citrate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/726518002 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/726518002">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/372823004"/>
+        <rdfs:label>Baricitinib</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://snomed.info/id/96172003 -->
+
+    <owl:Class rdf:about="http://snomed.info/id/96172003">
+        <rdfs:subClassOf rdf:resource="http://snomed.info/id/117178002"/>
+        <rdfs:label>Meclofenamic acid</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

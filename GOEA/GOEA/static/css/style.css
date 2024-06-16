@@ -1,0 +1,285 @@
+/* General style for pages */
+.main_body {
+    background-color: white;
+    width: 70%;
+    margin-top: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h1,h2,h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+  }
+
+.vl {
+    border-left: 3px solid rgb(108, 117, 125);
+    height: 200px;
+}
+
+.form-container {
+    margin: auto;
+}
+
+.logo {
+    width: 30%;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/* Extraction Page */
+.row-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#slider-container {
+    flex: 1;
+    margin-right: 20px;
+}
+
+#graph-container {
+    flex: 1;
+}
+
+#ontology-graph-container {
+    width: 100%;
+}
+
+.table-container {
+    max-height: 300px; 
+    overflow-y: auto;
+    width: 100%;
+}
+
+.table-container_big {
+  max-height: 600px; 
+  overflow-y: auto;
+  width: 100%;
+}
+
+#textbox-container {
+  height: 702px; 
+}
+
+#textbox-container textarea {
+    margin-top: 5px;
+    width: 100%;
+    height: 100%;
+    resize: none; 
+    border:1px solid #bbb;
+    box-sizing: border-box; 
+  }
+
+.heading-container {
+  display: flex;
+  align-items: center;
+}
+
+.info-button {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ccc;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+  position: relative; 
+}
+
+
+/* Style for tables */
+.dataframe { width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; }
+.dataframe th, .dataframe td { padding: 8px; text-align: center; }
+.dataframe thead { background-color: #c2c0c0; }
+.dataframe tbody tr:nth-child(even) { background-color: #f9f9f9; }
+.dataframe tbody tr:nth-child(odd) { background-color: #f9f9f9; }
+.dataframe tbody tr:hover { background-color: #f0f0f0; }
+
+
+/* Style for the slider */
+#slider {
+    width: 100%;
+  }
+
+#slider-container {
+    position: relative;
+}
+
+#slider-value-display {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+    }
+
+/* Style for progress bar */
+.progress {
+    display: -ms-flexbox;
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    line-height: 0;
+    font-size: 0.75rem;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+  }
+  
+  .progress-bar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    transition: width 0.6s ease;
+  }
+  
+  .progress-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 10px;
+  }
+  
+  #progress_box {
+      margin-top: 20px;
+  }
+  
+  /* Progress bar striped and animated styles */
+  .progress-bar-striped {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-size: 1rem 1rem;
+  }
+  
+  .progress-bar-animated {
+    animation: progress-bar-stripes 1s linear infinite;
+  }
+  
+  @keyframes progress-bar-stripes {
+    0% {
+      background-position: 1rem 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  /* Progress bar background colors */
+  .bg-primary {
+    background-color: #007bff !important;
+  }
+
+
+/* Style for spinning wheel */
+.loader {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border: 15px solid;
+    border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25) rgba(0, 0, 0, 0.35) rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    margin: 10px;
+    margin-bottom: 20px;
+  }
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.not_visible {
+  display: none;
+}
+
+.key_icon {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 9999;
+  width: 3%;
+  height: auto;
+}
+
+.error_logo {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* FORM ERRORS */
+div.form-errors ul {
+  list-style-type: none; /* Ensures no bullet points and overrides other styles */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+div.form-errors li {
+  color: #DB3A34;
+  font-weight: bold;
+}
+
+.error_traceback {
+  font-weight: bold;
+  color: #333;
+}
+
+.error_textarea {
+  width: 100%;
+  height: 200px;
+  resize: vertical;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.item-container {
+  display: flex;
+}

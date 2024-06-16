@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Error</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="main_body">
+    <img src="{% static '/img/error.png' %}" alt="Error" class="error_logo">
+    <h1>{{ type }}</h1>
+    <p>An error occurred while performing the event abstraction. Please try again.</p>
+        <div>
+            <p class="error_traceback">Error Traceback</p>
+            <textarea class="error_textarea" readonly>{{ error_traceback }}</textarea>
+        </div>
+    
+    <a href="{% url 'api_key_page' %}">
+        <button class="btn btn-outline-secondary btn-lg mt-4 btn-block">Return to API Key Page</button>
+    </a>
+    <a href="{% url 'upload_page' %}">
+        <button class="btn btn-outline-secondary btn-lg mt-4 btn-block">Return to Upload Page</button>
+    </a>
+</body>
+</html>

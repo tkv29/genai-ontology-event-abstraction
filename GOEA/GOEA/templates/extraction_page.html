@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extraction Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="{% static '/js/slider.js' %}" defer></script>
+    <script src="{% static '/js/progress-bar.js' %}" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
+</head>
+<body class="main_body">
+    <h1> Uploaded Ontology</h1>
+    <div class="row-container">
+        <div id="slider-container">
+          <div class="heading-container">
+            <h2>Choose Abstraction Level</h2>
+            <div class="info-button" title=
+            "Use the slider to change the target abstraction level.
+Orange Nodes: These nodes represent the target abstraction levels.
+Blue Nodes: These nodes represent the drugs/medications being abstracted to the orange nodes.
+Grey Nodes: These nodes are not considered in the abstraction at the current target abstraction level.
+            " aria-label="">i</div>
+          </div>
+          <form id="slider-form" method="get" action=".">
+            {% csrf_token %}
+            <input type="range" id="slider" name="slider_value" min="1" max="{{ max_depth }}" value="{{ abstraction_level }}">
+            <input type="hidden" id="slider-value-input" name="slider_value" value="{{ abstraction_level }}">
+          </form>
+          <div id="slider-value-display">Current Abstraction Level: <span id="slider-value">{{ abstraction_level }}</span></div>
+          <div id="textbox-container">
+            <textarea rows="30" cols="50" readonly>{{ ontology_string }}</textarea>
+        </div>
+        </div>
+        <div id="graph-container">
+          <div id="ontology-graph-container">{{ ontology_graph|safe }}</div>
+        </div>
+      </div>
+      <hr class="rounded">
+    <h1> Uploaded XES Event Log</h1>
+      <div class="table-container">{{ xes_html|safe }}</div>
+
+    <div class="spinner-container" id="loading-container">
+      <span id="loading-spinner" class="loader not_visible"></span>
+    </div>
+    <div id="progress_box" class="not_visible">
+      <div class="progress-container">
+        <!-- Progress bar and message will be added here -->
+      </div>
+    </div>
+    
+    <form method="post" >
+      {% csrf_token %}
+      <button type="submit" class="btn btn-outline-primary btn-lg mt-4 btn-block" id="progress_button">GO - Event Abstraction</button>
+    </form>
+
+    <a href="{% url 'upload_page' %}">
+        <button class="btn btn-outline-secondary btn-lg mt-4 btn-block">Return To Upload Page</button>
+    </a>
+</body>
+</html>

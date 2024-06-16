@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Page</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="main_body">
+    <a href="{% url 'api_key_page' %}">
+        <img src="{% static '/img/key.png' %}" class="key_icon">
+    </a>
+    <img src="{% static '/img/logo.png' %}" alt="GOEA Logo" class="logo">
+    <h1>GO - Event Abstraction</h1>
+    <h3>Where Events Meet Abstraction Through GenAI and Ontology</h3>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="row-container">
+            <div class="form-container">
+                <label for="{{ form.xes_file.id_for_label }}">Upload XES File:</label>
+                {{ form.xes_file }}
+                {% if form.xes_file.errors %}
+                    <div class="text-danger">{{ form.xes_file.errors }}</div>
+                {% endif %}
+        </div>
+        <div class="vl"></div>
+        <div class="form-container">
+            <label for="{{ form.owl_file.id_for_label }}">Upload OWL File:</label>
+            {{ form.owl_file }}
+            {% if form.owl_file.errors %}
+                <div class="text-danger">{{ form.owl_file.errors }}</div>
+            {% endif %}
+            <div>
+                <label for="{{ form.custom_ontology_used.id_for_label }}">Does the OWL file contain a custom ontology?:</label>
+                {{ form.custom_ontology_used }}
+            </div>
+        
+        </div>
+    </div>
+        <button type="submit" class="btn btn-outline-secondary btn-lg mt-4 btn-block">Next</button>
+    </form>
+</body>
+</html>

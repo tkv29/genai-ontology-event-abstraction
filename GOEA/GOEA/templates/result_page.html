@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
+</head>
+<body class="main_body">
+
+    <h1>Result</h1>
+    <h2>Abstracted Medication Event Log</h2>
+    <div class="table-container_big">{{ abstraction_table|safe }}</div>
+
+
+
+    <form id="downloadForm" action="{% url 'download_page' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="submit" value="Download XES Files" class="btn btn-outline-secondary btn-lg mt-4 btn-block">
+    </form>
+
+
+    <a href="{% url 'upload_page' %}">
+        <button class="btn btn-outline-secondary btn-lg mt-4 btn-block">Return To Upload Page</button>
+    </a>
+</body>
+
+</html>
