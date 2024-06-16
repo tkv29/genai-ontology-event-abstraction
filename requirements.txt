@@ -2,3 +2,4 @@ django
 pyvis
 pm4py
 openai
+rdflib
